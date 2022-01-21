@@ -65,7 +65,6 @@ print("\(str3)")
 }else{
      let str3 = str2.prefix(2)
     print("Shorter String is \(str3)")
-    
 }
  //Write a Swift program to create a new string without the first and last character of a given string. The string length must be at least 2.
 
@@ -186,9 +185,9 @@ print("Descending Order of this array is \(arr4.sorted(by: >))")
 
 var listOfNumbers = [1, 2, 3, 10, 100]
 var divisors = [2, 5]
-for i in listOfNumbers{
-    for j in divisors{
-        if i%j == 0{
+for i in listOfNumbers {
+    for j in divisors {
+        if i%j == 0 { 
             var newarr:Array = [i]
             print("\(newarr)")
         }

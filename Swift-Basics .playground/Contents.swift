@@ -331,7 +331,7 @@ print(result)
 
 var customersInLine = ["Cherry", "Aam", "Kiwi", "Apple", "Bannaa"]
 print(customersInLine.count)
-let customerProvide	 = {customersInLine.remove(at: 2)}
+let customerProvide = {customersInLine.remove(at: 2)}
 print(customersInLine.count)
 
 print("Now Serving \(customerProvide())")
@@ -550,22 +550,6 @@ if let partPrice = objComputerParts.findParts(name: "mouse")?.price{
     print("I am Here")
 }
     
-//Error Handling
-//enum BikeError:Error{
-//    case insuffiecientPetrolQuantity(neededPetrolQuantity:Int)
-//}
-//struct Bike{
-//    func startPicnic(petrolQuantity:Int) ->String{
-//        if petrolQuantity<4{
-//             //throw an error
-//            throw BikeError.insuffiecientPetrolQuantity(neededPetrolQuantity: <#T##Int#>)
-//        }
-//        print("Lets Begin the Picnic")
-//    }
-//}
-//
-
-
 var array = [1,2,3,4,5]
 //for i in array[..<3]{
 //    print(i)
@@ -575,7 +559,7 @@ var array123 = Array(abc123)
 print(array123)
 var str34:String = ""
 var array23: [String] = []
-abc123.
+
 for i in array123{
     if i != " "{
         str34.append(i)
