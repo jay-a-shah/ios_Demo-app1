@@ -17,6 +17,10 @@
 		F13DAB2F278D590C00D427BC /* Demo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB2E278D590C00D427BC /* Demo_appTests.swift */; };
 		F13DAB39278D590C00D427BC /* Demo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB38278D590C00D427BC /* Demo_appUITests.swift */; };
 		F13DAB3B278D590C00D427BC /* Demo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */; };
+		F18AD00A27DF009B00A80F88 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AD00927DF009B00A80F88 /* LoginScreen.swift */; };
+		F18AD00C27DF00B000A80F88 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AD00B27DF00B000A80F88 /* MainViewController.swift */; };
+		F18AD00E27DF00C000A80F88 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AD00D27DF00C000A80F88 /* SignUpPage.swift */; };
+		F18AD01227DF023D00A80F88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AD01127DF023D00A80F88 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		F13DAB34278D590C00D427BC /* Demo appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB38278D590C00D427BC /* Demo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITests.swift; sourceTree = "<group>"; };
 		F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F18AD00927DF009B00A80F88 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F18AD00B27DF00B000A80F88 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F18AD00D27DF00C000A80F88 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		F18AD01127DF023D00A80F88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		F13DAB0B278D590B00D427BC = {
 			isa = PBXGroup;
 			children = (
+				F18AD01027DF022200A80F88 /* Utils */,
 				F13DAB16278D590B00D427BC /* Demo app */,
 				F13DAB2D278D590C00D427BC /* Demo appTests */,
 				F13DAB37278D590C00D427BC /* Demo appUITests */,
@@ -101,6 +110,9 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F18AD00D27DF00C000A80F88 /* SignUpPage.swift */,
+				F18AD00B27DF00B000A80F88 /* MainViewController.swift */,
+				F18AD00927DF009B00A80F88 /* LoginScreen.swift */,
 				F13DAB17278D590B00D427BC /* AppDelegate.swift */,
 				F13DAB19278D590B00D427BC /* SceneDelegate.swift */,
 				F13DAB1B278D590B00D427BC /* ViewController.swift */,
@@ -128,6 +140,14 @@
 				F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */,
 			);
 			path = "Demo appUITests";
+			sourceTree = "<group>";
+		};
+		F18AD01027DF022200A80F88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F18AD01127DF023D00A80F88 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18AD00E27DF00C000A80F88 /* SignUpPage.swift in Sources */,
+				F18AD00C27DF00B000A80F88 /* MainViewController.swift in Sources */,
+				F18AD00A27DF009B00A80F88 /* LoginScreen.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,
+				F18AD01227DF023D00A80F88 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
