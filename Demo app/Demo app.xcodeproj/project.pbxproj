@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104E9D027A29F2700866005 /* SecondViewController.swift */; };
 		F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB17278D590B00D427BC /* AppDelegate.swift */; };
 		F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB19278D590B00D427BC /* SceneDelegate.swift */; };
 		F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB1B278D590B00D427BC /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F104E9D027A29F2700866005 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F13DAB14278D590B00D427BC /* Demo app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB17278D590B00D427BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F13DAB19278D590B00D427BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F13DAB17278D590B00D427BC /* AppDelegate.swift */,
 				F13DAB19278D590B00D427BC /* SceneDelegate.swift */,
 				F13DAB1B278D590B00D427BC /* ViewController.swift */,
+				F104E9D027A29F2700866005 /* SecondViewController.swift */,
 				F13DAB1D278D590B00D427BC /* Main.storyboard */,
 				F13DAB20278D590C00D427BC /* Assets.xcassets */,
 				F13DAB22278D590C00D427BC /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,
