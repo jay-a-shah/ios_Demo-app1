@@ -10,6 +10,15 @@ if array.isEmpty {
 array.append("Jay Buddhdev")
 array.insert("Vishal", at: 0)
 
+array.filter ({ return pref
+})
+var nn = [1,2,25,6,36,89,66,3]
+nn = nn.filter({$0 % 2 == 0})
+print(nn)
+var array12 = nn.map({ $0 * 2 })
+print(array12)
+
+
 var greeting = "Hello, playground"
  // Function
 

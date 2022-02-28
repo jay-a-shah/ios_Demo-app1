@@ -17,6 +17,8 @@
 		F13DAB2F278D590C00D427BC /* Demo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB2E278D590C00D427BC /* Demo_appTests.swift */; };
 		F13DAB39278D590C00D427BC /* Demo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB38278D590C00D427BC /* Demo_appUITests.swift */; };
 		F13DAB3B278D590C00D427BC /* Demo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */; };
+		F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59D27CCA8E400560B1F /* LoginScreen.swift */; };
+		F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F13DAB34278D590C00D427BC /* Demo appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB38278D590C00D427BC /* Demo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITests.swift; sourceTree = "<group>"; };
 		F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F18AC59D27CCA8E400560B1F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				F13DAB20278D590C00D427BC /* Assets.xcassets */,
 				F13DAB22278D590C00D427BC /* LaunchScreen.storyboard */,
 				F13DAB25278D590C00D427BC /* Info.plist */,
+				F18AC59D27CCA8E400560B1F /* LoginScreen.swift */,
+				F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */,
 			);
 			path = "Demo app";
 			sourceTree = "<group>";
@@ -261,10 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,
+				F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
