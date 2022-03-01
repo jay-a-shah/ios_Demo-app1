@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
-//MARK: - Outlet
+    //MARK: - Outlet
     @IBOutlet weak var btnLoginScreen: UIButton!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var btn1: UIButton!
@@ -18,7 +17,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
       }
-
 // MARK: - New Part
 extension ViewController: TextDelegate {
     func sendText(text: String) {
