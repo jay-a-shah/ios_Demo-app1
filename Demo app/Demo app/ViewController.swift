@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
       }
 // MARK: - New Part
 extension ViewController: TextDelegate {
@@ -26,10 +27,11 @@ extension ViewController: TextDelegate {
 //MARK: - Outlet Action
 extension ViewController {
     @IBAction func goToSecondView(_ sender: UIButton) {
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? SecondViewController {
-            controller.delegate = self
-            self.present(controller, animated: true, completion: nil)
-            }
+//        if let controller = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? SecondViewController {
+//            controller.delegate = self
+//            self.present(controller, animated: true, completion: nil)
+//            }
+        performSegue(withIdentifier: "signUpScreen", sender: self)
     }
     @IBAction func goToLogin(_ sender: UIButton) {
         if let loginScreen = storyboard?.instantiateViewController(withIdentifier: "loginScreen") as? LoginScreen {

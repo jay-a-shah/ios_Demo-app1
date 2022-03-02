@@ -19,6 +19,7 @@
 		F13DAB3B278D590C00D427BC /* Demo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */; };
 		F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59D27CCA8E400560B1F /* LoginScreen.swift */; };
 		F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */; };
+		F1BC1F5527CF664D00433EA1 /* SignUp Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUp Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F18AC59D27CCA8E400560B1F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		F1BC1F5427CF664C00433EA1 /* SignUp Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "SignUp Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				F13DAB25278D590C00D427BC /* Info.plist */,
 				F18AC59D27CCA8E400560B1F /* LoginScreen.swift */,
 				F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */,
+				F1BC1F5427CF664C00433EA1 /* SignUp Screen.storyboard */,
 			);
 			path = "Demo app";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13DAB24278D590C00D427BC /* LaunchScreen.storyboard in Resources */,
+				F1BC1F5527CF664D00433EA1 /* SignUp Screen.storyboard in Resources */,
 				F13DAB21278D590C00D427BC /* Assets.xcassets in Resources */,
 				F13DAB1F278D590B00D427BC /* Main.storyboard in Resources */,
 			);
