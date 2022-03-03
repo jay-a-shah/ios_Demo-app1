@@ -24,7 +24,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Go To Second View"/>
                                 <connections>
                                     <action selector="goToSecondView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pM-Yf-RRM"/>
-                                    <segue destination="TzX-Sr-PrN" kind="presentation" id="Hfd-ok-3B8"/>
+                                    <segue destination="TzX-Sr-PrN" kind="presentation" modalPresentationStyle="fullScreen" id="Hfd-ok-3B8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI9-Kb-lha">
@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="2186.9565217391309" y="58.928571428571423"/>
         </scene>
-        <!--SignUp Screen-->
+        <!--SizeClassExample-->
         <scene sceneID="dMh-bx-KWC">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp Screen" id="TzX-Sr-PrN" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SizeClassExample" id="TzX-Sr-PrN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzj-40-Pnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="786" y="469"/>
