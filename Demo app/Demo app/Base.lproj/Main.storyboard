@@ -24,7 +24,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Go To Second View"/>
                                 <connections>
                                     <action selector="goToSecondView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pM-Yf-RRM"/>
-                                    <segue destination="TzX-Sr-PrN" kind="presentation" modalPresentationStyle="fullScreen" id="Hfd-ok-3B8"/>
+                                    <segue destination="fN8-Yn-El2" kind="show" id="zh6-Kj-Iqk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI9-Kb-lha">
@@ -58,6 +58,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="785.50724637681174" y="57.589285714285708"/>
+        </scene>
+        <!--SignUp Screen-->
+        <scene sceneID="7Rr-ha-gzR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp Screen" id="fN8-Yn-El2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AiT-sr-4x7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uny-Cb-sRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="451"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="tlZ-vO-EyR">
@@ -173,14 +183,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRi-mv-2uw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2186.9565217391309" y="58.928571428571423"/>
-        </scene>
-        <!--SizeClassExample-->
-        <scene sceneID="dMh-bx-KWC">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SizeClassExample" id="TzX-Sr-PrN" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bzj-40-Pnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="786" y="469"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="ZVI-6z-5tk">
