@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="785.50724637681174" y="57.589285714285708"/>
         </scene>
-        <!--SignUp Screen-->
+        <!--SignUpPage-->
         <scene sceneID="7Rr-ha-gzR">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp Screen" id="fN8-Yn-El2" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SignUpPage" id="fN8-Yn-El2" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="AiT-sr-4x7"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uny-Cb-sRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
