@@ -12,6 +12,10 @@ class LoginPage: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "Login Screen"
+        self.navigationController?.navigationBar.largeContentTitle = "Large Content Title"
+        self.navigationController?.title = "Jay"
+        self.navigationController?.navigationItem.title = "Login"
     }
 }
 //MARK: - Outlet Action

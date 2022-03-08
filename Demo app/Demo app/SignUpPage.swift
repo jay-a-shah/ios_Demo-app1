@@ -32,7 +32,8 @@ class SignUpPage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Login Screen"
+        self.title = "Login Screen"
+        
     }
     @IBAction func startSubmitProgress(_ sender: UIButton) {
 //        progressView.setProgress(0.9, animated: true)

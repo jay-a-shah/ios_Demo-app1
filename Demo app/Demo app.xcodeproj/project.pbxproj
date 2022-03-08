@@ -29,6 +29,10 @@
 		F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */; };
 		F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */; };
 		F195D40927D2347A009FE2A1 /* UiPageControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40827D2347A009FE2A1 /* UiPageControlViewController.swift */; };
+		F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F199590527D72C220088E9BF /* TabBarController.storyboard */; };
+		F199590827D7372F0088E9BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590727D7372F0088E9BF /* TabBarController.swift */; };
+		F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590927D749FB0088E9BF /* HomeViewController.swift */; };
+		F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590C27D773B90088E9BF /* ImageViewController.swift */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +81,10 @@
 		F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionCell.swift; sourceTree = "<group>"; };
 		F195D40827D2347A009FE2A1 /* UiPageControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiPageControlViewController.swift; sourceTree = "<group>"; };
+		F199590527D72C220088E9BF /* TabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarController.storyboard; sourceTree = "<group>"; };
+		F199590727D7372F0088E9BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F199590927D749FB0088E9BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F199590C27D773B90088E9BF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +137,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F199590B27D750E90088E9BF /* TabBarController */,
 				F1C7DFB627D20D1D001456F3 /* UICollectionView */,
 				F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */,
 				F13DAB17278D590B00D427BC /* AppDelegate.swift */,
@@ -167,6 +176,17 @@
 				F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */,
 			);
 			path = "Demo appUITests";
+			sourceTree = "<group>";
+		};
+		F199590B27D750E90088E9BF /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				F199590927D749FB0088E9BF /* HomeViewController.swift */,
+				F199590727D7372F0088E9BF /* TabBarController.swift */,
+				F199590527D72C220088E9BF /* TabBarController.storyboard */,
+				F199590C27D773B90088E9BF /* ImageViewController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */ = {
@@ -294,6 +314,7 @@
 			files = (
 				F13DAB24278D590C00D427BC /* LaunchScreen.storyboard in Resources */,
 				F108299E27D0DCD4006D0372 /* SizeClassExample.storyboard in Resources */,
+				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
 				F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */,
 				F13DAB21278D590C00D427BC /* Assets.xcassets in Resources */,
@@ -323,13 +344,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */,
+				F199590827D7372F0088E9BF /* TabBarController.swift in Sources */,
 				F195D40927D2347A009FE2A1 /* UiPageControlViewController.swift in Sources */,
+				F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */,
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
+				F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,

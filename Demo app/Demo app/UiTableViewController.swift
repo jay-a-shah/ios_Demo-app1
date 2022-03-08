@@ -11,15 +11,34 @@ class UiTableViewController: UIViewController {
 //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
 //MARK: -Variables
-    var names = ["abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr","abc","pqr"]
+   var names = ["abc","pqr","xyz"]
+    var sectionFirst = 1
+    var sectionSecond = 2
+    lazy var refreshControl: UIRefreshControl = {
+                let refreshControl = UIRefreshControl()
+            refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: .valueChanged)
+                refreshControl.tintColor = UIColor.green
+                return refreshControl
+            }()
+        @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+            for _ in 1...100 {
+                names += ["JAY","abc","xyz"]
+            }
+            sectionFirst = 30
+            sectionSecond = 25
+                self.tableView.reloadData()
+                refreshControl.endRefreshing()
+            }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.addSubview(self.refreshControl)
     }
 }
 //MARK: - UITableView Delegate
 extension UiTableViewController: UITableViewDelegate{
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        print("You Tapped Me")
     }
@@ -31,7 +50,7 @@ extension UiTableViewController: UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOne", for:indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = names[indexPath.row]
         
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = .gray
@@ -45,11 +64,11 @@ extension UiTableViewController: UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return 10
+            return sectionFirst
         }else if section == 1 {
-            return 20
+            return sectionSecond
         }else{
-            return 50
+            return sectionFirst
         }
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

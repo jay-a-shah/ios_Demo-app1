@@ -9,30 +9,28 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController {
-
+//MARK: - Outlet
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet var searchBar: UISearchBar!
+    
+//MARK: -View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
-        loadWebView(webUrl: "https://www.youtube.com")
-        // Do any additional setup after loading the view.
-    }
-    func loadWebView(webUrl: String){
-        guard let url = URL(string: webUrl) else { return }
+       // searchBar.delegate = self
+        guard let url = URL(string: "https://www.google.com") else {
+            return
+        }
         let urlRequest = URLRequest(url: url)
         webView.load(urlRequest)
     }
-    func searchingTextOnGoogle(_ text: String) {
-        let textComponents = text.components(separatedBy: " ")
-        let searchText = textComponents.joined(separator: "+")
-        loadWebView(webUrl: "https://www.google.com/search?q=" + searchText)
-     }
 }
 
-extension WebViewController: UISearchBarDelegate{
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        let webUrl = searchBar.text?.lowercased()
-        loadWebView(webUrl: webUrl ?? "")
-    }
-}
+//extension WebViewController: UISearchBarDelegate{
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.text = ""
+//        searchBar.showsCancelButton = false
+//        // You could also change the position, frame etc of the searchBar
+//    }
+//}
+
