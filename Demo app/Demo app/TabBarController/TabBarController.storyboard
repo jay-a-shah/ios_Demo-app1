@@ -9,17 +9,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="auO-PM-oC0">
             <objects>
-                <viewController id="pI4-z1-gXu" sceneMemberID="viewController">
+                <viewController id="pI4-z1-gXu" customClass="MapViewController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RLh-qN-4SE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-et-3Z3">
+                                <rect key="frame" x="0.0" y="597" width="414" height="216"/>
+                                <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pickerView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XWg-Hf-I0P">
+                                <rect key="frame" x="0.0" y="44" width="414" height="553"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cT4-nc-Q9e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cT4-nc-Q9e" firstAttribute="trailing" secondItem="ahe-et-3Z3" secondAttribute="trailing" id="4rR-gw-ZC4"/>
+                            <constraint firstItem="ahe-et-3Z3" firstAttribute="leading" secondItem="RLh-qN-4SE" secondAttribute="leading" id="9Ah-7t-lhF"/>
+                            <constraint firstItem="ahe-et-3Z3" firstAttribute="top" secondItem="XWg-Hf-I0P" secondAttribute="bottom" id="DQo-Hh-jRv"/>
+                            <constraint firstItem="cT4-nc-Q9e" firstAttribute="bottom" secondItem="ahe-et-3Z3" secondAttribute="bottom" id="Edw-Xq-lPN"/>
+                            <constraint firstItem="XWg-Hf-I0P" firstAttribute="top" secondItem="cT4-nc-Q9e" secondAttribute="top" id="RlP-ub-RgL"/>
+                            <constraint firstItem="XWg-Hf-I0P" firstAttribute="leading" secondItem="cT4-nc-Q9e" secondAttribute="leading" id="WUL-XN-Tu7"/>
+                            <constraint firstItem="cT4-nc-Q9e" firstAttribute="trailing" secondItem="XWg-Hf-I0P" secondAttribute="trailing" id="wpI-rz-Nb5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="selectedImageTintColor">
+                                <color key="value" systemColor="tintColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="43a-Ey-dkz"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" id="43a-Ey-dkz"/>
+                    <connections>
+                        <outlet property="mapView" destination="XWg-Hf-I0P" id="30u-xr-B3T"/>
+                        <outlet property="pickerView" destination="ahe-et-3Z3" id="1Ex-4O-gjS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w5f-GY-cFx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,11 +56,11 @@
         <scene sceneID="C1I-k6-HwD">
             <objects>
                 <viewController storyboardIdentifier="imageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jQC-aw-Jrd" customClass="ImageViewController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="h2I-lh-CO8">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="h2I-lh-CO8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-IU-cYf" userLabel="Photo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-IU-cYf" userLabel="Photo">
                                 <rect key="frame" x="132" y="114.5" width="150" height="147"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +95,7 @@
                             <constraint firstItem="BZt-IU-cYf" firstAttribute="centerX" secondItem="h2I-lh-CO8" secondAttribute="centerX" id="mhR-pg-elI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="10" selectedImage="square.and.arrow.up" catalog="system" id="q24-SB-78h">
+                    <tabBarItem key="tabBarItem" badgeValue="10" selectedImage="image" id="q24-SB-78h">
                         <color key="badgeColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
@@ -100,8 +127,8 @@
                             <constraint firstItem="z6l-Zd-wCU" firstAttribute="centerY" secondItem="xaK-dh-ZID" secondAttribute="centerY" id="g6o-z6-24R"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" badgeValue="5" selectedImage="square.and.arrow.up" catalog="system" id="k3E-A8-ZsC">
-                        <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="large"/>
+                    <tabBarItem key="tabBarItem" title="Home" badgeValue="5" id="k3E-A8-ZsC">
+                        <imageReference key="image" image="home" symbolScale="large"/>
                         <color key="badgeColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
@@ -122,7 +149,7 @@
                         <viewLayoutGuide key="safeArea" id="2t6-U9-Jfp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SMw-lQ-kIm"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="square.and.arrow.up" catalog="system" id="SMw-lQ-kIm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x1y-sm-iZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +165,7 @@
                         <viewLayoutGuide key="safeArea" id="M4g-na-ZU3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="f4n-Dx-ZaT"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="paperplane.fill" catalog="system" id="f4n-Dx-ZaT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXk-BJ-Lv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +181,7 @@
                         <viewLayoutGuide key="safeArea" id="BAk-dt-swL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="O7I-PP-ubc"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="folder" catalog="system" id="O7I-PP-ubc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpW-KB-ROB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,53 +197,65 @@
                         <viewLayoutGuide key="safeArea" id="pd0-Yz-gwZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="grt-Jl-hvH"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="trash.slash.circle.fill" catalog="system" id="grt-Jl-hvH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWa-uo-AZw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="-493"/>
+            <point key="canvasLocation" x="1997" y="-158"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gOC-ip-OSO">
             <objects>
                 <tabBarController id="SDd-s6-ESX" customClass="TabBarController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionIndicatorImage="square.and.arrow.up.circle" catalog="system" itemPositioning="centered" id="Ekt-OD-6zF">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="Ekt-OD-6zF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <tabBarAppearance key="standardAppearance"/>
-                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="barTintColor" systemColor="systemPurpleColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
                     </tabBar>
                     <connections>
                         <outlet property="bottomTabBar" destination="Ekt-OD-6zF" id="ui1-kr-rS0"/>
                         <segue destination="tXi-YJ-ynB" kind="relationship" relationship="viewControllers" id="bj0-tH-Nwa"/>
-                        <segue destination="jQC-aw-Jrd" kind="relationship" relationship="viewControllers" id="WOw-Ak-BWi"/>
                         <segue destination="pI4-z1-gXu" kind="relationship" relationship="viewControllers" id="ksE-7P-akO"/>
-                        <segue destination="u2c-iT-mKu" kind="relationship" relationship="viewControllers" id="HUR-aw-BuS"/>
-                        <segue destination="vbJ-v3-f2U" kind="relationship" relationship="viewControllers" id="KgQ-F4-1l6"/>
-                        <segue destination="v4d-Qv-89w" kind="relationship" relationship="viewControllers" id="loZ-pc-7Sg"/>
-                        <segue destination="QLo-Ut-HQD" kind="relationship" relationship="viewControllers" id="oH5-dA-2jb"/>
+                        <segue destination="u2c-iT-mKu" kind="relationship" relationship="viewControllers" id="Akv-rL-6v1"/>
+                        <segue destination="v4d-Qv-89w" kind="relationship" relationship="viewControllers" id="FWh-zD-ldG"/>
+                        <segue destination="vbJ-v3-f2U" kind="relationship" relationship="viewControllers" id="vts-9O-M22"/>
+                        <segue destination="QLo-Ut-HQD" kind="relationship" relationship="viewControllers" id="qLT-du-dzf"/>
+                        <segue destination="jQC-aw-Jrd" kind="relationship" relationship="viewControllers" id="syN-89-ZJm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jep-EL-Xyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-362" y="-267"/>
+            <point key="canvasLocation" x="-757" y="-344"/>
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <image name="home" width="24" height="24"/>
+        <image name="image" width="30" height="30"/>
+        <image name="map" width="30" height="30"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="121"/>
+        <image name="trash.slash.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
