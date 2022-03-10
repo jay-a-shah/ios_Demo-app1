@@ -95,11 +95,12 @@
                             <constraint firstItem="BZt-IU-cYf" firstAttribute="centerX" secondItem="h2I-lh-CO8" secondAttribute="centerX" id="mhR-pg-elI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" badgeValue="10" selectedImage="image" id="q24-SB-78h">
+                    <tabBarItem key="tabBarItem" image="image" badgeValue="10" selectedImage="image" id="q24-SB-78h">
                         <color key="badgeColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="btnAddPhoto" destination="cLk-bd-261" id="kZC-TQ-vAI"/>
                         <outlet property="imageView" destination="BZt-IU-cYf" id="pt7-F6-9rh"/>
                     </connections>
                 </viewController>
@@ -213,6 +214,11 @@
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <color key="barTintColor" systemColor="systemPurpleColor"/>
                         <color key="selectedImageTintColor" systemColor="systemPinkColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unSelectedItemTintColor">
+                                <color key="value" systemColor="systemTealColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <outlet property="bottomTabBar" destination="Ekt-OD-6zF" id="ui1-kr-rS0"/>
@@ -253,6 +259,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -9,10 +9,15 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    @IBOutlet weak var btnAddPhoto: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.layer.cornerRadius = 75
+        btnAddPhoto.layer.masksToBounds = false
+        btnAddPhoto.layer.shadowRadius = 37
+        btnAddPhoto.layer.shadowColor = UIColor.black.cgColor
+        btnAddPhoto.layer.shadowOffset = CGSize(width: 200, height: 200)
         // Do any additional setup after loading the view.
     }
     

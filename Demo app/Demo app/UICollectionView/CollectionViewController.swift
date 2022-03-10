@@ -10,6 +10,7 @@ import UIKit
 class CollectionViewController: UIViewController {
 //MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    
     var cellImage:[String] = ["FacebookLogo","googleLogo","LogoOfEye","LogoOfLoginScreen"]
     var cellLabel:[String] = ["Facebook","Google","Eye","Twitter"]
     

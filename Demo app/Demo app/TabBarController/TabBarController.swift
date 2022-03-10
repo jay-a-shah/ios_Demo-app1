@@ -12,7 +12,7 @@ class TabBarController: UITabBarController {
     @IBOutlet weak var bottomTabBar: UITabBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.selectedIndex = 2
+        self.selectedIndex = 5
         self.delegate = self
         bottomTabBar.unselectedItemTintColor = .green
         self.tabBar.unselectedItemTintColor = .black
