@@ -8,7 +8,9 @@
 import UIKit
 
 class LoginPage: UIViewController{
-
+//MARK: - Outlets
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -16,6 +18,8 @@ class LoginPage: UIViewController{
         self.navigationController?.navigationBar.largeContentTitle = "Large Content Title"
         self.navigationController?.title = "Jay"
         self.navigationController?.navigationItem.title = "Login"
+        passwordTextField.delegate = self
+        emailTextField.delegate = self
     }
 }
 //MARK: - Outlet Action
@@ -34,4 +38,18 @@ extension LoginPage{
     }
     
 }
+}
+extension LoginPage: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case emailTextField:
+            //emailTextField.resignFirstResponder()
+            passwordTextField.becomeFirstResponder()
+        case passwordTextField:
+            passwordTextField.resignFirstResponder()
+        default :
+            break
+        }
+        return true
+    }
 }

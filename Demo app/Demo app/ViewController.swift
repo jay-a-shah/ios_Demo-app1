@@ -32,11 +32,11 @@ extension ViewController: TextDelegate {
 extension ViewController {
     
     @IBAction func goToSecondView(_ sender: UIButton) {
-//        if let controller = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? SecondViewController {
-//            controller.delegate = self
-//            self.present(controller, animated: true, completion: nil)
-//            }
-    // performSegue(withIdentifier: "signUpScreen", sender: self)
+        if let controller = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? SecondViewController {
+            controller.delegate = self
+            self.navigationController?.pushViewController(controller, animated: true)
+            }
+     
     }
     
     @IBAction func goToLogin(_ sender: UIButton) {

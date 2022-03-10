@@ -31,7 +31,6 @@
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMw-a4-Kwj">
                                                 <rect key="frame" x="30" y="190" width="354" height="35"/>
-                                                <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="yes" keyboardType="emailAddress" returnKeyType="continue" textContentType="email"/>
                                             </textField>
@@ -504,7 +503,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oL7-Ev-ntm">
                                         <rect key="frame" x="30" y="332" width="331" height="65.5"/>
                                         <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-mg-4tZ">
                                         <rect key="frame" x="30" y="462" width="331" height="45.5"/>
@@ -560,6 +559,10 @@
                             <constraint firstItem="WMP-fW-I52" firstAttribute="trailing" secondItem="Ntj-K4-13W" secondAttribute="trailing" id="HSZ-Lh-tNp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="8hz-pp-pHj" id="NZf-f6-cRC"/>
+                        <outlet property="passwordTextField" destination="oL7-Ev-ntm" id="Gdh-Tw-WVK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qw0-dj-2Pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
