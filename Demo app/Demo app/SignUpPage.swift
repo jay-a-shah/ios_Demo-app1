@@ -24,12 +24,6 @@ class SignUpPage: UIViewController {
     var value:Float = 0.1
     var pageControlImages: [String] = ["FacebookLogo","googleLogo","LogoOfEye","LogoOfLoginScreen"]
     
-  
-    
-   
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Login Screen"
