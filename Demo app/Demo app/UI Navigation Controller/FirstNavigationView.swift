@@ -14,6 +14,7 @@ class FirstNavigationView: UIViewController {
         title = "First Navigation Controller"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: nil)
         navigationController?.navigationBar.tintColor = .label
+       
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +24,7 @@ class FirstNavigationView: UIViewController {
             
     }
 }
+   
     @IBAction func goToRootVC(segue: UIStoryboardSegue){
         
     }

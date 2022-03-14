@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-//MARK: - Outlets
+    //MARK: - Outlets
     @IBOutlet weak var changeLayout: UISwitch!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var stackView: UIStackView!
@@ -17,27 +17,27 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var stepperControl: UIStepper!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-//MARK: - Variables
+    //MARK: - Variables
     var data = ["Apple","Banana","Green-Apple","Grapes","Kiwi","WaterMelon"]
     var filteredData : [String] = []
     var addItems = 2
-//MARK: - View LifeCycle
-   override func viewDidLoad() {
+    //MARK: - View LifeCycle
+    override func viewDidLoad() {
         super.viewDidLoad()
-       title = "Home"
-       tableView.dataSource = self
-       for _ in 1...10 {
-           data += data
-       }
-       filteredData = data
-       searchBar.delegate = self
-       collectionView.delegate = self
-       collectionView.dataSource = self
-       DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
-           self.activityIndicator.stopAnimating()
-       }
+        title = "Home"
+        tableView.dataSource = self
+        for _ in 1...10 {
+            data += data
+        }
+        filteredData = data
+        searchBar.delegate = self
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
+            self.activityIndicator.stopAnimating()
+        }
     }
-  
+    
 }
 extension HomeViewController {
     @IBAction func toChangeSegment(_ sender: UISegmentedControl) {
@@ -72,6 +72,7 @@ extension HomeViewController {
         }
     }
 }
+
 //MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,16 +83,16 @@ extension HomeViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for:indexPath)
         cell.textLabel?.text = filteredData[indexPath.row]
         if indexPath.row % 2 == 0 {
-                cell.backgroundColor = .white
+            cell.backgroundColor = .white
         }else{
-                cell.backgroundColor = .darkGray
+            cell.backgroundColor = .darkGray
         }
         return cell
     }
-    }
+}
 extension HomeViewController: UISearchBarDelegate{
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
