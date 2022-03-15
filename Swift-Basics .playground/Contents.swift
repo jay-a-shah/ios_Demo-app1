@@ -159,7 +159,9 @@ if favGen.contains("Rocky") {
 for f1 in favGen.sorted(){
     print("\(f1)")
 }
-
+var f2:[String]
+f2=["zz","ss","yy"]
+f2.sort()
 let oddDig:Set = [1,3,5,7,9]
 var evenDig:Set = [2,4,6,8]
 print(oddDig)

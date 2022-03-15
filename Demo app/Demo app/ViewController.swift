@@ -8,9 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     //MARK: - Outlet
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var btn1: UIButton!
+    
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +25,11 @@ extension ViewController: TextDelegate {
         textLabel.text = text
     }
 }
+
 //MARK: - Outlet Action
 extension ViewController {
     @IBAction func goToSecondView(_ sender: UIButton) {
-      if let controller = storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? SecondViewController {
+        if let controller = storyboard?.instantiateViewController(withIdentifier: Constants.secondViewController) as? SecondViewController {
             controller.delegate = self
             self.present(controller, animated: true, completion: nil)
         }
