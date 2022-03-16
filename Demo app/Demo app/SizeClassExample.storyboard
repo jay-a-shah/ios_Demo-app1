@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Size Class View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="sizeClassExample" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SizeClassViewController" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8U-xt-V7I" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="44" width="428" height="424"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdf-lS-YAB">
+                                        <rect key="frame" x="79" y="148" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98106676339999999" green="0.4480973345" blue="0.52641180119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="nYd-kh-iQE"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nYd-kh-iQE"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="nYd-kh-iQE"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlc-Ol-SaW" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="468" width="428" height="424"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ker-Z1-fDC">
+                                        <rect key="frame" x="289" y="193" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="qlc-Ol-SaW" secondAttribute="bottom" id="2Yt-b0-RGe"/>
+                            <constraint firstItem="qlc-Ol-SaW" firstAttribute="top" secondItem="s8U-xt-V7I" secondAttribute="bottom" id="CNI-vg-cRS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="s8U-xt-V7I" secondAttribute="top" id="EyB-41-PyX"/>
+                            <constraint firstItem="qlc-Ol-SaW" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="HgX-aK-gJY"/>
+                            <constraint firstItem="qlc-Ol-SaW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ltd-pV-9Ww"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" id="MSC-2G-M5a"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="N64-9l-U4T"/>
+                            <constraint firstAttribute="trailing" secondItem="qlc-Ol-SaW" secondAttribute="trailing" id="OIR-Rh-l8S"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.5" id="PdE-6X-hnP"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.5" id="V4T-Iw-EJP"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Z8H-Go-lg3"/>
+                            <constraint firstItem="qlc-Ol-SaW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="i4K-5s-pv1"/>
+                            <constraint firstItem="s8U-xt-V7I" firstAttribute="trailing" secondItem="qlc-Ol-SaW" secondAttribute="leading" id="ppK-gS-3L7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="s8U-xt-V7I" secondAttribute="bottom" id="xXL-7N-YaN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xXL-7N-YaN"/>
+                                <exclude reference="MSC-2G-M5a"/>
+                                <exclude reference="PdE-6X-hnP"/>
+                                <exclude reference="ppK-gS-3L7"/>
+                                <exclude reference="HgX-aK-gJY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="MSC-2G-M5a"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="xXL-7N-YaN"/>
+                                <include reference="MSC-2G-M5a"/>
+                                <exclude reference="N64-9l-U4T"/>
+                                <exclude reference="V4T-Iw-EJP"/>
+                                <include reference="ppK-gS-3L7"/>
+                                <exclude reference="CNI-vg-cRS"/>
+                                <include reference="HgX-aK-gJY"/>
+                                <exclude reference="i4K-5s-pv1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Ltd-pV-9Ww"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="-78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

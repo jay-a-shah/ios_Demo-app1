@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     //MARK: - Outlet
+    @IBOutlet weak var btnLoginScreen: UIButton!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var btn1: UIButton!
     
@@ -28,10 +29,17 @@ extension ViewController: TextDelegate {
 
 //MARK: - Outlet Action
 extension ViewController {
+    
     @IBAction func goToSecondView(_ sender: UIButton) {
         if let controller = storyboard?.instantiateViewController(withIdentifier: Constants.secondViewController) as? SecondViewController {
             controller.delegate = self
             self.present(controller, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func goToLogin(_ sender: UIButton) {
+        if let loginScreen = storyboard?.instantiateViewController(withIdentifier: Constants.loginScreen ) as? LoginScreen {
+            self.present(loginScreen, animated: true, completion: nil)
         }
     }
 }
