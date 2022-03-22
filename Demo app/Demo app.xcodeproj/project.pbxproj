@@ -46,6 +46,8 @@
 		F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545B27DB55E80048C713 /* FourthNavigationView.swift */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
+		F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */; };
+		F1DCFA5827E9EC7D0077522F /* LoginWithApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		F19B545B27DB55E80048C713 /* FourthNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthNavigationView.swift; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebServicesPage.storyboard; sourceTree = "<group>"; };
+		F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithApiController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F1DCFA5427E9EC1D0077522F /* WebServices */,
 				F14B90AC27E094A00010BD13 /* Coordinator */,
 				F19B545227DB41AE0048C713 /* UI Navigation Controller */,
 				F199590B27D750E90088E9BF /* TabBarController */,
@@ -255,6 +260,15 @@
 				F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		F1DCFA5427E9EC1D0077522F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */,
+				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
+			);
+			path = WebServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +377,7 @@
 			files = (
 				F13DAB24278D590C00D427BC /* LaunchScreen.storyboard in Resources */,
 				F108299E27D0DCD4006D0372 /* SizeClassExample.storyboard in Resources */,
+				F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */,
 				F19B545427DB49A90048C713 /* NavigationController.storyboard in Resources */,
 				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
@@ -400,6 +415,7 @@
 				F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */,
 				F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */,
 				F195D40927D2347A009FE2A1 /* UiPageControlViewController.swift in Sources */,
+				F1DCFA5827E9EC7D0077522F /* LoginWithApiController.swift in Sources */,
 				F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */,
 				F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */,
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
