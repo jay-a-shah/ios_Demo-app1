@@ -8,14 +8,16 @@
 import Foundation
 import UIKit
 class MainStoryBoardCoordinator: Coordinator{
+   // MARK: - Variables
     var navController: UINavigationController?
     init(_ navigationController : UINavigationController){
         navController = navigationController
     }
     
     func start() {
-        if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "uiComponentsViewController") as? UiComponentsViewController{
-            navController?.pushViewController(mainVC, animated: true)
+        if let loginWithApiVC = UIStoryboard(name: "WebServicesPage", bundle: nil).instantiateViewController(withIdentifier: "loginWithApiController") as? LoginWithApiController{
+            loginWithApiVC.cordinator = self
+            navController?.pushViewController(loginWithApiVC, animated: true)
         }
     }
     
@@ -25,6 +27,11 @@ class MainStoryBoardCoordinator: Coordinator{
     
     func stop() {
         
+    }
+    func mainStoryBoard(){
+        if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "uiComponentsViewController") as? UiComponentsViewController{
+            navController?.pushViewController(mainVC, animated: true)
+        }
     }
     
     

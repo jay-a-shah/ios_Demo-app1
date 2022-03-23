@@ -72,7 +72,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="EJj-6U-JfE" firstAttribute="leading" secondItem="36C-nm-W4y" secondAttribute="leading" constant="20" id="222-n0-5ph"/>
                                             <constraint firstAttribute="trailing" secondItem="wqf-wQ-OE8" secondAttribute="trailing" constant="20" id="706-41-9H3"/>
