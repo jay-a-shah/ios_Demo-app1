@@ -46,6 +46,8 @@
 		F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545B27DB55E80048C713 /* FourthNavigationView.swift */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
+		F1CE83FB27EC35500054AD0C /* TableViewWithApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */; };
+		F1CE83FD27EC42210054AD0C /* WebServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */; };
 		F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */; };
 		F1DCFA5827E9EC7D0077522F /* LoginWithApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */; };
 /* End PBXBuildFile section */
@@ -111,6 +113,8 @@
 		F19B545B27DB55E80048C713 /* FourthNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthNavigationView.swift; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithApi.swift; sourceTree = "<group>"; };
+		F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesCoordinator.swift; sourceTree = "<group>"; };
 		F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebServicesPage.storyboard; sourceTree = "<group>"; };
 		F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithApiController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +219,7 @@
 				F14B90AD27E094C20010BD13 /* Coordinator.swift */,
 				F14B90AF27E095530010BD13 /* AppCoordinator.swift */,
 				F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */,
+				F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			children = (
 				F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */,
 				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
+				F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */,
+				F1CE83FD27EC42210054AD0C /* WebServicesCoordinator.swift in Sources */,
 				F199590827D7372F0088E9BF /* TabBarController.swift in Sources */,
 				F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */,
 				F19B545827DB4A670048C713 /* SecondNavigationView.swift in Sources */,
@@ -436,6 +443,7 @@
 				F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */,
 				F108299C27D0D2E7006D0372 /* UiTableViewController.swift in Sources */,
 				F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */,
+				F1CE83FB27EC35500054AD0C /* TableViewWithApi.swift in Sources */,
 				F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

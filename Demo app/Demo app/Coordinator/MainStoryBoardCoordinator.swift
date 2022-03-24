@@ -33,6 +33,12 @@ class MainStoryBoardCoordinator: Coordinator{
             navController?.pushViewController(mainVC, animated: true)
         }
     }
+    func webServicesPageStoryboard(){
+        if let navCon = navController{
+            let webServiceVCCoordinator = WebServicesCoordinator(navCon)
+            webServiceVCCoordinator.start()
+        }
+    }
     
     
 }
