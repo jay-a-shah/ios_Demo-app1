@@ -30,15 +30,15 @@ class MainStoryBoardCoordinator: Coordinator{
     }
     func mainStoryBoard(){
         if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "uiComponentsViewController") as? UiComponentsViewController{
+            mainVC.coordinator = self
             navController?.pushViewController(mainVC, animated: true)
         }
     }
+    
     func webServicesPageStoryboard(){
         if let navCon = navController{
             let webServiceVCCoordinator = WebServicesCoordinator(navCon)
             webServiceVCCoordinator.start()
         }
     }
-    
-    
 }

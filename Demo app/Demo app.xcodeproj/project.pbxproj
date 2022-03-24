@@ -31,6 +31,7 @@
 		F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F127D5DB9F00B8076D /* PageViewController.swift */; };
 		F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F327D60C0100B8076D /* LoginPage.swift */; };
 		F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F527D61BEE00B8076D /* WebViewController.swift */; };
+		F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18DF81F27EC531500DACC34 /* TableViewWithApiCell.swift */; };
 		F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */; };
 		F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */; };
 		F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */; };
@@ -98,6 +99,7 @@
 		F18AC8F127D5DB9F00B8076D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F18AC8F327D60C0100B8076D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F18AC8F527D61BEE00B8076D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F18DF81F27EC531500DACC34 /* TableViewWithApiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWithApiCell.swift; sourceTree = "<group>"; };
 		F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionCell.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */,
 				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
 				F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */,
+				F18DF81F27EC531500DACC34 /* TableViewWithApiCell.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
+				F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */,
 				F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,

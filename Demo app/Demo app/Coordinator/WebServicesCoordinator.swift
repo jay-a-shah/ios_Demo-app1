@@ -15,7 +15,7 @@ class WebServicesCoordinator: Coordinator{
     }
     func start() {
         if let tableViewWithApiVC = UIStoryboard(name: "WebServicesPage", bundle: nil).instantiateViewController(withIdentifier: "tableViewWithApi") as? TableViewWithApi{
-            tableViewWithApiVC.cordinator = self
+            tableViewWithApiVC.coordinator = self
             navController?.pushViewController(tableViewWithApiVC, animated: true)
         }
     }
@@ -28,6 +28,5 @@ class WebServicesCoordinator: Coordinator{
     func stop() {
         
     }
-    
     
 }

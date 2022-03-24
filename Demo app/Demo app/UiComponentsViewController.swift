@@ -8,7 +8,7 @@
 import UIKit
 
 class UiComponentsViewController: UIViewController {
-    var cordinator: WebServicesCoordinator?
+    var coordinator: MainStoryBoardCoordinator?
 
     @IBOutlet weak var btnComponentsWithApiCalling: UIButton!
     @IBOutlet weak var btnDatePickerAndToolbar: UIButton!
@@ -17,5 +17,6 @@ class UiComponentsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func goToTableViewWithApi(_ sender: UIButton) {
+        coordinator?.webServicesPageStoryboard()
     }
 }
