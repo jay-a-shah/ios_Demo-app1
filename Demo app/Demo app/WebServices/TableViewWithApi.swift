@@ -9,41 +9,25 @@ import UIKit
 
 import Foundation
 
-// MARK: - Welcome
 struct Welcome: Codable {
-    let page, perPage, total, totalPages: Int
+    let page: Int
+    let per_page: Int
+    let total: Int
+    let total_pages: Int
     let data: [Datum]
     let support: Support
-
-    enum CodingKeys: String, CodingKey {
-        case page
-        case perPage = "per_page"
-        case total
-        case totalPages = "total_pages"
-        case data, support
-    }
 }
-
-// MARK: - Datum
 struct Datum: Codable {
     let id: Int
-    let email, firstName, lastName: String
+    let email: String
+    let first_name: String
+    let last_name: String
     let avatar: String
-
-    enum CodingKeys: String, CodingKey {
-        case id, email
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case avatar
-    }
 }
-
-// MARK: - Support
 struct Support: Codable {
     let url: String
     let text: String
 }
-
 
 class TableViewWithApi: UIViewController {
     var fetchedArray = [Datum]()
@@ -54,7 +38,7 @@ class TableViewWithApi: UIViewController {
         parseData()
         tableView.delegate = self
         tableView.dataSource = self
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -63,24 +47,17 @@ class TableViewWithApi: UIViewController {
             print("Error: cannot create URL")
             return
         }
-     
+        
         let configuration = URLSessionConfiguration.default
         let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
-//        let url = URL(string: "https://reqres.in/api/users?page=2")
+        //        let url = URL(string: "https://reqres.in/api/users?page=2")
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         let datatask = session.dataTask(with: request) { data ,urlNewResponse ,error in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
-            if let responseData = data {
-                guard let fetchData = try? JSONDecoder().decode(Datum.self, from: responseData)else{
-                    
-                    return
-                }
-                self.fetchedArray.append(fetchData)
-                print(fetchData)
-            }
+            
             do{
                 guard let data = data else {
                     return
@@ -93,7 +70,7 @@ class TableViewWithApi: UIViewController {
                 guard let data = data else {
                     return
                 }
-
+                
                 guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
                     print("Error: Cannot convert data to JSON object")
                     return
@@ -106,16 +83,24 @@ class TableViewWithApi: UIViewController {
                     print("Error: Couldn't print JSON in String")
                     return
                 }
-                
-                print(prettyPrintedJson)
-            } catch {
-                print("Error: Trying to convert JSON data to string")
-                return
+                guard let fetchData = try? JSONDecoder().decode(Welcome.self, from: prettyJsonData)else{
+                    print("Error in Data")
+                    return
+                }
+                self.fetchedArray = fetchData.data
+                print(fetchData)
+                DispatchQueue.main.async {[weak self] in
+                    guard let uSelf = self else {return}
+                    uSelf.tableView.reloadData()
+                }
+            print(prettyPrintedJson)
             }
-         
-           
+         catch {
+            print("Error: Trying to convert JSON data to string")
+            return
+        }
     }
-        datatask.resume()
+    datatask.resume()
 }
 }
 //MARK: - UITableViewDelegate
@@ -132,8 +117,8 @@ extension TableViewWithApi: UITableViewDataSource{
         if let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewWithApiCell", for: indexPath) as? TableViewWithApiCell{
             let elements = fetchedArray[indexPath.row]
             cell.emailTextField.text = elements.email
-            cell.firstNameTextField.text = elements.firstName
-            cell.lastNameTextField.text = elements.lastName
+            cell.firstNameTextField.text = elements.first_name
+            cell.lastNameTextField.text = elements.last_name
             return cell
         }
         return UITableViewCell()
