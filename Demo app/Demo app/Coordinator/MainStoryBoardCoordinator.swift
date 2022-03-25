@@ -10,6 +10,7 @@ import UIKit
 class MainStoryBoardCoordinator: Coordinator{
    // MARK: - Variables
     var navController: UINavigationController?
+    var webServiceCoordinator: WebServicesCoordinator?
     init(_ navigationController : UINavigationController){
         navController = navigationController
     }
@@ -41,4 +42,9 @@ class MainStoryBoardCoordinator: Coordinator{
             webServiceVCCoordinator.start()
         }
     }
+    func moveToCollectionViewWithApi(){
+        webServiceCoordinator = WebServicesCoordinator(navController ?? UINavigationController())
+        webServiceCoordinator?.moveToCollectionViewWithApi()
+    }
+    
 }

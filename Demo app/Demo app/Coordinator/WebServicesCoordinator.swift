@@ -28,5 +28,11 @@ class WebServicesCoordinator: Coordinator{
     func stop() {
         
     }
+    func moveToCollectionViewWithApi(){
+        if let collectionViewWithApiVC = UIStoryboard(name: "WebServicesPage", bundle: nil).instantiateViewController(withIdentifier: "collectionViewWithApi") as? CollectionViewWithApi{
+            collectionViewWithApiVC.coordinator = self
+            navController?.pushViewController(collectionViewWithApiVC, animated: true)
+        }
+    }
     
 }

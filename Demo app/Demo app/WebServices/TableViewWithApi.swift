@@ -93,15 +93,15 @@ class TableViewWithApi: UIViewController {
                     guard let uSelf = self else {return}
                     uSelf.tableView.reloadData()
                 }
-            print(prettyPrintedJson)
+                print(prettyPrintedJson)
             }
-         catch {
-            print("Error: Trying to convert JSON data to string")
-            return
+            catch {
+                print("Error: Trying to convert JSON data to string")
+                return
+            }
         }
+        datatask.resume()
     }
-    datatask.resume()
-}
 }
 //MARK: - UITableViewDelegate
 extension TableViewWithApi: UITableViewDelegate{
@@ -116,6 +116,17 @@ extension TableViewWithApi: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewWithApiCell", for: indexPath) as? TableViewWithApiCell{
             let elements = fetchedArray[indexPath.row]
+            if let urlImage = URL(string: elements.avatar ?? ""){
+                DispatchQueue.global().async {
+                    let imageData = try? Data(contentsOf: urlImage)
+                    DispatchQueue.main.async {
+                       
+                        cell.imageViewWithApi.image = UIImage(data: imageData!)
+                        
+                    }
+                   
+                }
+            }
             cell.emailTextField.text = elements.email
             cell.firstNameTextField.text = elements.first_name
             cell.lastNameTextField.text = elements.last_name

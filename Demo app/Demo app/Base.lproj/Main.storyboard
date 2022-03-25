@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36C-nm-W4y">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="823"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="784"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIY-QN-lU5">
                                                 <rect key="frame" x="20" y="61" width="374" height="74"/>
@@ -72,11 +72,11 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtN-46-SBQ">
-                                                <rect key="frame" x="10" y="352" width="394" height="92"/>
+                                                <rect key="frame" x="10" y="352" width="394" height="53"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Components With Api Calling">
+                                                        <fragment content="Table View With Api Calling">
                                                             <attributes>
                                                                 <font key="NSFont" size="30" name="MarkerFelt-Wide"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -90,14 +90,36 @@
                                                     <action selector="goToTableViewWithApi:" destination="GGD-8g-PPX" eventType="touchUpInside" id="95r-vl-OOM"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS0-yT-tPj">
+                                                <rect key="frame" x="20" y="425" width="374" height="92"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Collection View With Api Calling">
+                                                            <attributes>
+                                                                <font key="NSFont" size="30" name="MarkerFelt-Wide"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="goToCollectionViewWithApi:" destination="GGD-8g-PPX" eventType="touchUpInside" id="vER-F5-94M"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="VtN-46-SBQ" secondAttribute="trailing" constant="10" id="15O-3j-RAe"/>
                                             <constraint firstItem="EJj-6U-JfE" firstAttribute="leading" secondItem="36C-nm-W4y" secondAttribute="leading" constant="20" id="222-n0-5ph"/>
                                             <constraint firstAttribute="trailing" secondItem="wqf-wQ-OE8" secondAttribute="trailing" constant="20" id="706-41-9H3"/>
+                                            <constraint firstAttribute="bottom" secondItem="IS0-yT-tPj" secondAttribute="bottom" constant="267" id="CMs-b5-aRK"/>
                                             <constraint firstItem="wqf-wQ-OE8" firstAttribute="top" secondItem="EJj-6U-JfE" secondAttribute="bottom" constant="40" id="Fgw-gC-juw"/>
+                                            <constraint firstAttribute="trailing" secondItem="IS0-yT-tPj" secondAttribute="trailing" constant="20" id="Ftm-kc-BZo"/>
                                             <constraint firstAttribute="trailing" secondItem="xIY-QN-lU5" secondAttribute="trailing" constant="20" id="GWN-4i-isP"/>
-                                            <constraint firstAttribute="bottom" secondItem="VtN-46-SBQ" secondAttribute="bottom" constant="379" id="PEi-O9-5Xp"/>
+                                            <constraint firstItem="IS0-yT-tPj" firstAttribute="top" secondItem="VtN-46-SBQ" secondAttribute="bottom" constant="20" id="LGl-iZ-9mP"/>
+                                            <constraint firstItem="IS0-yT-tPj" firstAttribute="leading" secondItem="36C-nm-W4y" secondAttribute="leading" constant="20" id="O7B-FM-F0g"/>
                                             <constraint firstItem="wqf-wQ-OE8" firstAttribute="leading" secondItem="36C-nm-W4y" secondAttribute="leading" constant="20" id="Sfo-VS-jUh"/>
                                             <constraint firstItem="VtN-46-SBQ" firstAttribute="leading" secondItem="36C-nm-W4y" secondAttribute="leading" constant="10" id="f90-Ws-9xn"/>
                                             <constraint firstItem="EJj-6U-JfE" firstAttribute="top" secondItem="xIY-QN-lU5" secondAttribute="bottom" constant="40" id="mZt-58-gNi"/>
@@ -129,6 +151,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ui Components" id="J6y-Iy-ZjR"/>
                     <connections>
+                        <outlet property="btnCollectionViewWithApi" destination="IS0-yT-tPj" id="I10-UR-yPQ"/>
                         <outlet property="btnComponentsWithApiCalling" destination="VtN-46-SBQ" id="PcV-q1-E2i"/>
                     </connections>
                 </viewController>

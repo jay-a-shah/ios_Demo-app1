@@ -9,6 +9,7 @@ import UIKit
 
 class TableViewWithApiCell: UITableViewCell {
 
+    @IBOutlet weak var imageViewWithApi: UIImageView!
     @IBOutlet weak var firstNameTextField: UILabel!
     @IBOutlet weak var lastNameTextField: UILabel!
     @IBOutlet weak var emailTextField: UILabel!
