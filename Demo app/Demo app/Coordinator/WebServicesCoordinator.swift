@@ -34,5 +34,17 @@ class WebServicesCoordinator: Coordinator{
             navController?.pushViewController(collectionViewWithApiVC, animated: true)
         }
     }
-    
+    func moveToSingleUser(index: Int){
+        if let singleUserVC = UIStoryboard(name: "WebServicesPage", bundle: nil).instantiateViewController(withIdentifier: "singleUserViewController") as? SingleUserViewController{
+            singleUserVC.coordinator = self
+            singleUserVC.itemIndex1 = index + 1
+            navController?.pushViewController(singleUserVC, animated: true)
+        }
+    }
+    func moveToCreateUser(){
+        if let createUserVC = UIStoryboard(name: "WebServicesPage", bundle: nil).instantiateViewController(withIdentifier: "createUserViewController") as? CreateUserViewController{
+            createUserVC.coordinator = self
+            navController?.present(createUserVC, animated: true, completion: nil)
+        }
+    }
 }

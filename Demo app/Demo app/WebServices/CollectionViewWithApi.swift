@@ -30,6 +30,7 @@ struct SupportList: Codable {
 
 class CollectionViewWithApi: UIViewController {
     //MARK: - Outlets
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     //MARK: - Variables
     var fetchedArray = [UserData]()
@@ -39,6 +40,7 @@ class CollectionViewWithApi: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(add) )
         getUserInfoWithAlmofire()
         // Do any additional setup after loading the view.
     }
@@ -52,9 +54,17 @@ class CollectionViewWithApi: UIViewController {
                     do{
                         let json = try JSONSerialization.jsonObject(with: responseData, options: [])
                         print("Json: \(json)")
+                        guard let newJson = try? JSONSerialization.data(withJSONObject: json, options: .prettyPrinted) else{
+                            return
+                        }
+                        guard let jsonData = try? JSONDecoder().decode(UserList.self, from: newJson) else {return}
+                        self.fetchedArray = jsonData.data
+                        self.collectionView.reloadData()
+                        self.activityIndicator.stopAnimating()
                     }catch let error{
                         print("Error\(error.localizedDescription)")
                     }
+                
                     break
                 case .failure(let error):
                     print("Error\(error.localizedDescription)")
@@ -65,7 +75,9 @@ class CollectionViewWithApi: UIViewController {
     }
 }
 extension CollectionViewWithApi: UICollectionViewDelegate{
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        coordinator?.moveToSingleUser(index: indexPath.row)
+    }
 }
 extension CollectionViewWithApi: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,6 +86,8 @@ extension CollectionViewWithApi: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell" , for: indexPath) as? CollectionViewWithApiCell{
+            let elements = fetchedArray[indexPath.row]
+            cell.configCell(firstName:elements.first_name , lastName: elements.last_name, email: elements.email, image: elements.avatar)
             return cell
         }
         return UICollectionViewCell()
@@ -81,3 +95,10 @@ extension CollectionViewWithApi: UICollectionViewDataSource{
     
     
 }
+extension CollectionViewWithApi{
+    @objc func add(){
+        print("ADD CALLED")
+        coordinator?.moveToCreateUser()
+    }
+}
+

@@ -56,6 +56,8 @@
 		F1CE83FD27EC42210054AD0C /* WebServicesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */; };
 		F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */; };
 		F1DCFA5827E9EC7D0077522F /* LoginWithApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */; };
+		F1EBF35027F1AA1A0032A671 /* SingleUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBF34F27F1AA1A0032A671 /* SingleUserViewController.swift */; };
+		F1EBF35227F1CD630032A671 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EBF35127F1CD630032A671 /* CreateUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 		F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesCoordinator.swift; sourceTree = "<group>"; };
 		F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebServicesPage.storyboard; sourceTree = "<group>"; };
 		F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithApiController.swift; sourceTree = "<group>"; };
+		F1EBF34F27F1AA1A0032A671 /* SingleUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserViewController.swift; sourceTree = "<group>"; };
+		F1EBF35127F1CD630032A671 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		F74D0DF6542FB078448AFAF6 /* Pods_Demo_app_Demo_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_app_Demo_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -317,11 +321,13 @@
 			isa = PBXGroup;
 			children = (
 				F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */,
+				F1EBF34F27F1AA1A0032A671 /* SingleUserViewController.swift */,
 				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
 				F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */,
 				F18DF81F27EC531500DACC34 /* TableViewWithApiCell.swift */,
 				F1AC2D1827EDD0BA00E93086 /* CollectionViewWithApi.swift */,
 				F1AC2D1A27EDE1EE00E93086 /* CollectionViewWithApiCell.swift */,
+				F1EBF35127F1CD630032A671 /* CreateUserViewController.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -585,6 +591,7 @@
 				F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */,
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
+				F1EBF35027F1AA1A0032A671 /* SingleUserViewController.swift in Sources */,
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
 				F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */,
 				F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */,
@@ -592,6 +599,7 @@
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F19B545627DB4A4D0048C713 /* FirstNavigationView.swift in Sources */,
+				F1EBF35227F1CD630032A671 /* CreateUserViewController.swift in Sources */,
 				F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */,
