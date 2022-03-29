@@ -409,7 +409,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC5-2g-388">
-                                <rect key="frame" x="20" y="297" width="374" height="49"/>
+                                <rect key="frame" x="30" y="297" width="354" height="54"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Submit">
                                     <fontDescription key="titleFontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
@@ -422,23 +422,27 @@
                         <viewLayoutGuide key="safeArea" id="71F-Gp-mIX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="71F-Gp-mIX" firstAttribute="trailing" secondItem="ZC5-2g-388" secondAttribute="trailing" constant="20" id="4Bt-8K-h49"/>
                             <constraint firstItem="mLD-Nc-M2q" firstAttribute="leading" secondItem="71F-Gp-mIX" secondAttribute="leading" constant="20" id="6UF-Sp-vvq"/>
-                            <constraint firstItem="ZC5-2g-388" firstAttribute="width" secondItem="Y4w-qd-Wjd" secondAttribute="width" multiplier="0.903382" id="87R-0r-Hck"/>
                             <constraint firstItem="71F-Gp-mIX" firstAttribute="trailing" secondItem="Bbk-yt-0y4" secondAttribute="trailing" constant="20" id="Bns-ME-j8e"/>
                             <constraint firstItem="Bbk-yt-0y4" firstAttribute="top" secondItem="XrV-NC-jyA" secondAttribute="bottom" constant="60" id="CdZ-N2-NfO"/>
                             <constraint firstAttribute="trailing" secondItem="mLD-Nc-M2q" secondAttribute="trailing" constant="20" id="Cuu-70-qxH"/>
                             <constraint firstItem="mLD-Nc-M2q" firstAttribute="height" secondItem="Bbk-yt-0y4" secondAttribute="height" id="E6e-ct-dso"/>
                             <constraint firstItem="Bbk-yt-0y4" firstAttribute="leading" secondItem="71F-Gp-mIX" secondAttribute="leading" constant="20" id="Eo3-fH-T7K"/>
-                            <constraint firstItem="ZC5-2g-388" firstAttribute="leading" secondItem="71F-Gp-mIX" secondAttribute="leading" constant="20" id="Gtu-LM-VgW"/>
                             <constraint firstItem="XrV-NC-jyA" firstAttribute="top" secondItem="71F-Gp-mIX" secondAttribute="top" constant="30" id="Ihp-uv-u9v"/>
                             <constraint firstItem="ZC5-2g-388" firstAttribute="top" secondItem="mLD-Nc-M2q" secondAttribute="bottom" constant="30" id="Low-mY-dxI"/>
                             <constraint firstItem="XrV-NC-jyA" firstAttribute="leading" secondItem="71F-Gp-mIX" secondAttribute="leading" constant="30" id="Sfp-sD-eFV"/>
                             <constraint firstItem="mLD-Nc-M2q" firstAttribute="top" secondItem="Bbk-yt-0y4" secondAttribute="bottom" constant="30" id="Vpn-hr-SFh"/>
                             <constraint firstItem="71F-Gp-mIX" firstAttribute="trailing" secondItem="XrV-NC-jyA" secondAttribute="trailing" constant="30" id="YVj-uB-r6n"/>
+                            <constraint firstItem="ZC5-2g-388" firstAttribute="leading" secondItem="71F-Gp-mIX" secondAttribute="leading" constant="30" id="YyB-0u-wMM"/>
+                            <constraint firstItem="71F-Gp-mIX" firstAttribute="trailing" secondItem="ZC5-2g-388" secondAttribute="trailing" constant="30" id="ZOU-cU-H0B"/>
                             <constraint firstItem="Bbk-yt-0y4" firstAttribute="height" secondItem="Y4w-qd-Wjd" secondAttribute="height" multiplier="0.04" id="bzB-7a-W66"/>
+                            <constraint firstItem="ZC5-2g-388" firstAttribute="height" secondItem="Y4w-qd-Wjd" secondAttribute="height" multiplier="0.06" id="jbO-Uh-sVe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblEmail" destination="mLD-Nc-M2q" id="aBe-XF-jdk"/>
+                        <outlet property="lblName" destination="Bbk-yt-0y4" id="c41-Ev-JgE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TXF-CW-tE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
