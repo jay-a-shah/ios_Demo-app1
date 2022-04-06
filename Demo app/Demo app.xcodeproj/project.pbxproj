@@ -217,6 +217,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F19ECEFB27FDB41600CE15CC /* mvc */,
 				F1DCFA5427E9EC1D0077522F /* WebServices */,
 				F14B90AC27E094A00010BD13 /* Coordinator */,
 				F19B545227DB41AE0048C713 /* UI Navigation Controller */,
@@ -296,6 +297,37 @@
 				F19B545B27DB55E80048C713 /* FourthNavigationView.swift */,
 			);
 			path = "UI Navigation Controller";
+			sourceTree = "<group>";
+		};
+		F19ECEFB27FDB41600CE15CC /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				F19ECEFE27FDB78100CE15CC /* Controller */,
+				F19ECEFD27FDB77A00CE15CC /* View */,
+				F19ECEFC27FDB77100CE15CC /* Model */,
+			);
+			path = mvc;
+			sourceTree = "<group>";
+		};
+		F19ECEFC27FDB77100CE15CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F19ECEFD27FDB77A00CE15CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F19ECEFE27FDB78100CE15CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */ = {
