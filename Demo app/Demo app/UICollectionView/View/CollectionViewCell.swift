@@ -19,6 +19,7 @@ class CollectionViewCell: UICollectionViewCell {
     func configCell(data: ModelCollectionCell){
         cellLabel.text = data.name
         cellImage.image = UIImage(named: data.img ?? "FacebookLogo")
+    
     }
 
 }

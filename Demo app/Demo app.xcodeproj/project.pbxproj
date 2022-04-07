@@ -26,6 +26,10 @@
 		F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AD27E094C20010BD13 /* Coordinator.swift */; };
 		F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AF27E095530010BD13 /* AppCoordinator.swift */; };
 		F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */; };
+		F158AE5927FEF6D20073EB46 /* LoginWithMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */; };
+		F158AE5B27FEF6E80073EB46 /* LoginWithMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */; };
+		F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5C27FEF95A0073EB46 /* LoginModel.swift */; };
+		F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */; };
 		F172E86327D8781E003D24DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86227D8781E003D24DA /* MapViewController.swift */; };
 		F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86427D8A0F2003D24DA /* DatePickerView.swift */; };
 		F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86627D8B046003D24DA /* UiComponentsViewController.swift */; };
@@ -106,6 +110,10 @@
 		F14B90AD27E094C20010BD13 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F14B90AF27E095530010BD13 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBoardCoordinator.swift; sourceTree = "<group>"; };
+		F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithMVC.swift; sourceTree = "<group>"; };
+		F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithMVC.storyboard; sourceTree = "<group>"; };
+		F158AE5C27FEF95A0073EB46 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F172E86227D8781E003D24DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F172E86427D8A0F2003D24DA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F172E86627D8B046003D24DA /* UiComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiComponentsViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +225,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
-				F19ECEFB27FDB41600CE15CC /* mvc */,
+				F158AE5427FEF5250073EB46 /* MVP */,
 				F1DCFA5427E9EC1D0077522F /* WebServices */,
 				F14B90AC27E094A00010BD13 /* Coordinator */,
 				F19B545227DB41AE0048C713 /* UI Navigation Controller */,
@@ -275,6 +283,65 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		F158AE4F27FEDFC10073EB46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F158AE5227FEE0E50073EB46 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F158AE5327FEE16F0073EB46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F158AE5427FEF5250073EB46 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				F158AE5727FEF6A60073EB46 /* Presenter */,
+				F158AE5627FEF69B0073EB46 /* View */,
+				F158AE5527FEF6870073EB46 /* Model */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		F158AE5527FEF6870073EB46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F158AE5C27FEF95A0073EB46 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F158AE5627FEF69B0073EB46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */,
+				F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F158AE5727FEF6A60073EB46 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		F199590B27D750E90088E9BF /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,37 +366,6 @@
 			path = "UI Navigation Controller";
 			sourceTree = "<group>";
 		};
-		F19ECEFB27FDB41600CE15CC /* mvc */ = {
-			isa = PBXGroup;
-			children = (
-				F19ECEFE27FDB78100CE15CC /* Controller */,
-				F19ECEFD27FDB77A00CE15CC /* View */,
-				F19ECEFC27FDB77100CE15CC /* Model */,
-			);
-			path = mvc;
-			sourceTree = "<group>";
-		};
-		F19ECEFC27FDB77100CE15CC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F19ECEFD27FDB77A00CE15CC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F19ECEFE27FDB78100CE15CC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,10 +377,10 @@
 		F1C7DFB627D20D1D001456F3 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */,
-				F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */,
+				F158AE5327FEE16F0073EB46 /* View */,
+				F158AE5227FEE0E50073EB46 /* Controller */,
+				F158AE4F27FEDFC10073EB46 /* Model */,
 				F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */,
-				F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -375,7 +411,7 @@
 				F13DAB10278D590B00D427BC /* Sources */,
 				F13DAB11278D590B00D427BC /* Frameworks */,
 				F13DAB12278D590B00D427BC /* Resources */,
-				56B25F90D44D7C42D714811F /* [CP] Embed Pods Frameworks */,
+				1929EE925AC5FA42F7CD9710 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -413,7 +449,7 @@
 				F13DAB30278D590C00D427BC /* Sources */,
 				F13DAB31278D590C00D427BC /* Frameworks */,
 				F13DAB32278D590C00D427BC /* Resources */,
-				76E5DDBD9BB2926193480A4D /* [CP] Embed Pods Frameworks */,
+				1E4577E93B097EB472736931 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -478,6 +514,7 @@
 				F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */,
 				F19B545427DB49A90048C713 /* NavigationController.storyboard in Resources */,
 				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
+				F158AE5B27FEF6E80073EB46 /* LoginWithMVC.storyboard in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
 				F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */,
 				F13DAB21278D590C00D427BC /* Assets.xcassets in Resources */,
@@ -524,6 +561,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1929EE925AC5FA42F7CD9710 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E4577E93B097EB472736931 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		31D7C7C1290EC285495F2AD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,40 +615,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		56B25F90D44D7C42D714811F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76E5DDBD9BB2926193480A4D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE48E9BE09658925375B9FB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -628,7 +665,10 @@
 				F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */,
 				F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
+				F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
+				F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */,
+				F158AE5927FEF6D20073EB46 /* LoginWithMVC.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F19B545627DB4A4D0048C713 /* FirstNavigationView.swift in Sources */,
 				F1EBF35227F1CD630032A671 /* CreateUserViewController.swift in Sources */,

@@ -11,9 +11,6 @@ class CollectionViewController: UIViewController {
 //MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var cellImage:[String] = ["FacebookLogo","googleLogo","LogoOfEye","LogoOfLoginScreen"]
-    var cellLabel:[String] = ["Facebook","Google","Eye","Twitter"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let nibCell = UINib(nibName: "CollectionViewCell", bundle: nil)
@@ -26,12 +23,12 @@ extension CollectionViewController: UICollectionViewDelegate {
 extension CollectionViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cellLabel.count
+        return ModelCollectionCell.cellLabel.count
     }
    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as?  CollectionViewCell {
-            cell.configCell(data: ModelCollectionCell(img: cellImage[indexPath.row],name: cellLabel[indexPath.row]))
+            cell.configCell(data: ModelCollectionCell(img: ModelCollectionCell.cellImage[indexPath.row],name: ModelCollectionCell.cellLabel[indexPath.row]))
         return cell
         }
         return UICollectionViewCell()
