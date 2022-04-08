@@ -1,12 +1,11 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
 # Xcode
-# TagBDemo
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 ## Build generated
 build/
-node_modules/
 DerivedData/
+docs/
 ## Various settings
 *.pbxuser
 !default.pbxuser
@@ -18,6 +17,7 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 ## Other
+*.generated.swift
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
@@ -27,10 +27,6 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
-Pods
-Podfile
-Podfile.lock
-*.generated.swift
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
