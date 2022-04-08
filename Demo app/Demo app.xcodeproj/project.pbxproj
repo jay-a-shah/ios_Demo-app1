@@ -26,14 +26,16 @@
 		F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AD27E094C20010BD13 /* Coordinator.swift */; };
 		F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AF27E095530010BD13 /* AppCoordinator.swift */; };
 		F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */; };
-		F158AE5927FEF6D20073EB46 /* LoginWithMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */; };
-		F158AE5B27FEF6E80073EB46 /* LoginWithMVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */; };
+		F158AE5927FEF6D20073EB46 /* LoginWithMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */; };
+		F158AE5B27FEF6E80073EB46 /* LoginWithMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */; };
 		F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5C27FEF95A0073EB46 /* LoginModel.swift */; };
 		F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */; };
 		F172E86327D8781E003D24DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86227D8781E003D24DA /* MapViewController.swift */; };
 		F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86427D8A0F2003D24DA /* DatePickerView.swift */; };
 		F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86627D8B046003D24DA /* UiComponentsViewController.swift */; };
 		F189E6AF28001D0600D32B6F /* LoginModelWithApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189E6AE28001D0600D32B6F /* LoginModelWithApi.swift */; };
+		F189E6B128004D7700D32B6F /* MVVMCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189E6B028004D7700D32B6F /* MVVMCoordinator.swift */; };
+		F189E6B32800565F00D32B6F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189E6B22800565F00D32B6F /* LoginViewModel.swift */; };
 		F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59D27CCA8E400560B1F /* LoginScreen.swift */; };
 		F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */; };
 		F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F127D5DB9F00B8076D /* PageViewController.swift */; };
@@ -111,14 +113,16 @@
 		F14B90AD27E094C20010BD13 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F14B90AF27E095530010BD13 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBoardCoordinator.swift; sourceTree = "<group>"; };
-		F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithMVC.swift; sourceTree = "<group>"; };
-		F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithMVC.storyboard; sourceTree = "<group>"; };
+		F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithMVVM.swift; sourceTree = "<group>"; };
+		F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithMVVM.storyboard; sourceTree = "<group>"; };
 		F158AE5C27FEF95A0073EB46 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F172E86227D8781E003D24DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F172E86427D8A0F2003D24DA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F172E86627D8B046003D24DA /* UiComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiComponentsViewController.swift; sourceTree = "<group>"; };
 		F189E6AE28001D0600D32B6F /* LoginModelWithApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelWithApi.swift; sourceTree = "<group>"; };
+		F189E6B028004D7700D32B6F /* MVVMCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoordinator.swift; sourceTree = "<group>"; };
+		F189E6B22800565F00D32B6F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F18AC59D27CCA8E400560B1F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		F18AC8F127D5DB9F00B8076D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -282,6 +286,7 @@
 				F14B90AF27E095530010BD13 /* AppCoordinator.swift */,
 				F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */,
 				F1CE83FC27EC42210054AD0C /* WebServicesCoordinator.swift */,
+				F189E6B028004D7700D32B6F /* MVVMCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -313,7 +318,7 @@
 		F158AE5427FEF5250073EB46 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				F158AE5727FEF6A60073EB46 /* Presenter */,
+				F158AE5727FEF6A60073EB46 /* ViewModel */,
 				F158AE5627FEF69B0073EB46 /* View */,
 				F158AE5527FEF6870073EB46 /* Model */,
 			);
@@ -331,17 +336,18 @@
 		F158AE5627FEF69B0073EB46 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F158AE5827FEF6D20073EB46 /* LoginWithMVC.swift */,
-				F158AE5A27FEF6E80073EB46 /* LoginWithMVC.storyboard */,
+				F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */,
+				F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		F158AE5727FEF6A60073EB46 /* Presenter */ = {
+		F158AE5727FEF6A60073EB46 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F189E6B22800565F00D32B6F /* LoginViewModel.swift */,
 			);
-			path = Presenter;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F189E6AA28001BB000D32B6F /* MVPLoginScreenWithApi */ = {
@@ -446,7 +452,7 @@
 				F13DAB10278D590B00D427BC /* Sources */,
 				F13DAB11278D590B00D427BC /* Frameworks */,
 				F13DAB12278D590B00D427BC /* Resources */,
-				3E5FB4027A7AD6C7AD2D4157 /* [CP] Embed Pods Frameworks */,
+				114B782038D3338CFDE76854 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -484,7 +490,7 @@
 				F13DAB30278D590C00D427BC /* Sources */,
 				F13DAB31278D590C00D427BC /* Frameworks */,
 				F13DAB32278D590C00D427BC /* Resources */,
-				05E2AA09353497C86B49458B /* [CP] Embed Pods Frameworks */,
+				01908008530AE8D2A25A1BC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -549,7 +555,7 @@
 				F1DCFA5627E9EC5C0077522F /* WebServicesPage.storyboard in Resources */,
 				F19B545427DB49A90048C713 /* NavigationController.storyboard in Resources */,
 				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
-				F158AE5B27FEF6E80073EB46 /* LoginWithMVC.storyboard in Resources */,
+				F158AE5B27FEF6E80073EB46 /* LoginWithMVVM.storyboard in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
 				F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */,
 				F13DAB21278D590C00D427BC /* Assets.xcassets in Resources */,
@@ -574,7 +580,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05E2AA09353497C86B49458B /* [CP] Embed Pods Frameworks */ = {
+		01908008530AE8D2A25A1BC1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,6 +619,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		114B782038D3338CFDE76854 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		31D7C7C1290EC285495F2AD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -633,23 +656,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3E5FB4027A7AD6C7AD2D4157 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE48E9BE09658925375B9FB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -684,6 +690,7 @@
 				F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */,
 				F1CE83FD27EC42210054AD0C /* WebServicesCoordinator.swift in Sources */,
 				F199590827D7372F0088E9BF /* TabBarController.swift in Sources */,
+				F189E6B128004D7700D32B6F /* MVVMCoordinator.swift in Sources */,
 				F1AC2D1927EDD0BA00E93086 /* CollectionViewWithApi.swift in Sources */,
 				F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */,
 				F19B545827DB4A670048C713 /* SecondNavigationView.swift in Sources */,
@@ -700,11 +707,12 @@
 				F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */,
 				F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */,
 				F189E6AF28001D0600D32B6F /* LoginModelWithApi.swift in Sources */,
+				F189E6B32800565F00D32B6F /* LoginViewModel.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */,
-				F158AE5927FEF6D20073EB46 /* LoginWithMVC.swift in Sources */,
+				F158AE5927FEF6D20073EB46 /* LoginWithMVVM.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F19B545627DB4A4D0048C713 /* FirstNavigationView.swift in Sources */,
 				F1EBF35227F1CD630032A671 /* CreateUserViewController.swift in Sources */,

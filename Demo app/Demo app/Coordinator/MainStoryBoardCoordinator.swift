@@ -46,5 +46,10 @@ class MainStoryBoardCoordinator: Coordinator{
         webServiceCoordinator = WebServicesCoordinator(navController ?? UINavigationController())
         webServiceCoordinator?.moveToCollectionViewWithApi()
     }
-    
+    func moveToMvvmStoryboard(){
+        if let navCon = navController{
+            let mvvmCoordinator = MVVMCoordinator(navCon)
+            mvvmCoordinator.start()
+        }
+    }
 }

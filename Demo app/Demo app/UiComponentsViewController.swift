@@ -10,6 +10,7 @@ import UIKit
 class UiComponentsViewController: UIViewController {
     var coordinator: MainStoryBoardCoordinator?
 
+    @IBOutlet weak var btnMVVMController: UIButton!
     @IBOutlet weak var btnCollectionViewWithApi: UIButton!
     @IBOutlet weak var btnComponentsWithApiCalling: UIButton!
     @IBOutlet weak var btnDatePickerAndToolbar: UIButton!
@@ -24,4 +25,7 @@ class UiComponentsViewController: UIViewController {
         coordinator?.moveToCollectionViewWithApi()
     }
     
+    @IBAction func goToMvvmController(_ sender: UIButton) {
+        coordinator?.moveToMvvmStoryboard()
+    }
 }
