@@ -33,6 +33,7 @@
 		F172E86327D8781E003D24DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86227D8781E003D24DA /* MapViewController.swift */; };
 		F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86427D8A0F2003D24DA /* DatePickerView.swift */; };
 		F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86627D8B046003D24DA /* UiComponentsViewController.swift */; };
+		F189E6AF28001D0600D32B6F /* LoginModelWithApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189E6AE28001D0600D32B6F /* LoginModelWithApi.swift */; };
 		F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59D27CCA8E400560B1F /* LoginScreen.swift */; };
 		F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */; };
 		F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F127D5DB9F00B8076D /* PageViewController.swift */; };
@@ -117,6 +118,7 @@
 		F172E86227D8781E003D24DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F172E86427D8A0F2003D24DA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F172E86627D8B046003D24DA /* UiComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiComponentsViewController.swift; sourceTree = "<group>"; };
+		F189E6AE28001D0600D32B6F /* LoginModelWithApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModelWithApi.swift; sourceTree = "<group>"; };
 		F18AC59D27CCA8E400560B1F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		F18AC8F127D5DB9F00B8076D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -225,12 +227,13 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
-				F158AE5427FEF5250073EB46 /* MVP */,
+				F189E6AA28001BB000D32B6F /* MVPLoginScreenWithApi */,
+				F158AE5427FEF5250073EB46 /* MVVM */,
 				F1DCFA5427E9EC1D0077522F /* WebServices */,
 				F14B90AC27E094A00010BD13 /* Coordinator */,
 				F19B545227DB41AE0048C713 /* UI Navigation Controller */,
 				F199590B27D750E90088E9BF /* TabBarController */,
-				F1C7DFB627D20D1D001456F3 /* UICollectionView */,
+				F1C7DFB627D20D1D001456F3 /* UICollectionViewMVC */,
 				F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */,
 				F13DAB17278D590B00D427BC /* AppDelegate.swift */,
 				F13DAB19278D590B00D427BC /* SceneDelegate.swift */,
@@ -307,14 +310,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F158AE5427FEF5250073EB46 /* MVP */ = {
+		F158AE5427FEF5250073EB46 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
 				F158AE5727FEF6A60073EB46 /* Presenter */,
 				F158AE5627FEF69B0073EB46 /* View */,
 				F158AE5527FEF6870073EB46 /* Model */,
 			);
-			path = MVP;
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		F158AE5527FEF6870073EB46 /* Model */ = {
@@ -335,6 +338,39 @@
 			sourceTree = "<group>";
 		};
 		F158AE5727FEF6A60073EB46 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F189E6AA28001BB000D32B6F /* MVPLoginScreenWithApi */ = {
+			isa = PBXGroup;
+			children = (
+				F189E6AD28001C8E00D32B6F /* Presenter */,
+				F189E6AC28001C8200D32B6F /* View */,
+				F189E6AB28001C7500D32B6F /* Model */,
+			);
+			path = MVPLoginScreenWithApi;
+			sourceTree = "<group>";
+		};
+		F189E6AB28001C7500D32B6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F189E6AE28001D0600D32B6F /* LoginModelWithApi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F189E6AC28001C8200D32B6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F189E6AD28001C8E00D32B6F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */,
@@ -374,7 +410,7 @@
 			path = LoginAndSignUpScreen;
 			sourceTree = "<group>";
 		};
-		F1C7DFB627D20D1D001456F3 /* UICollectionView */ = {
+		F1C7DFB627D20D1D001456F3 /* UICollectionViewMVC */ = {
 			isa = PBXGroup;
 			children = (
 				F158AE5327FEE16F0073EB46 /* View */,
@@ -382,7 +418,7 @@
 				F158AE4F27FEDFC10073EB46 /* Model */,
 				F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */,
 			);
-			path = UICollectionView;
+			path = UICollectionViewMVC;
 			sourceTree = "<group>";
 		};
 		F1DCFA5427E9EC1D0077522F /* WebServices */ = {
@@ -390,7 +426,6 @@
 			children = (
 				F1DCFA5527E9EC5C0077522F /* WebServicesPage.storyboard */,
 				F1EBF34F27F1AA1A0032A671 /* SingleUserViewController.swift */,
-				F1DCFA5727E9EC7D0077522F /* LoginWithApiController.swift */,
 				F1CE83FA27EC35500054AD0C /* TableViewWithApi.swift */,
 				F18DF81F27EC531500DACC34 /* TableViewWithApiCell.swift */,
 				F1AC2D1827EDD0BA00E93086 /* CollectionViewWithApi.swift */,
@@ -411,7 +446,7 @@
 				F13DAB10278D590B00D427BC /* Sources */,
 				F13DAB11278D590B00D427BC /* Frameworks */,
 				F13DAB12278D590B00D427BC /* Resources */,
-				1929EE925AC5FA42F7CD9710 /* [CP] Embed Pods Frameworks */,
+				3E5FB4027A7AD6C7AD2D4157 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,7 +484,7 @@
 				F13DAB30278D590C00D427BC /* Sources */,
 				F13DAB31278D590C00D427BC /* Frameworks */,
 				F13DAB32278D590C00D427BC /* Resources */,
-				1E4577E93B097EB472736931 /* [CP] Embed Pods Frameworks */,
+				05E2AA09353497C86B49458B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -539,6 +574,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05E2AA09353497C86B49458B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		06B5960980F63935088B4D9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,40 +613,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1929EE925AC5FA42F7CD9710 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1E4577E93B097EB472736931 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app-Demo appUITests/Pods-Demo app-Demo appUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		31D7C7C1290EC285495F2AD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -615,6 +633,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E5FB4027A7AD6C7AD2D4157 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo app/Pods-Demo app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE48E9BE09658925375B9FB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -664,6 +699,7 @@
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
 				F18DF82027EC531500DACC34 /* TableViewWithApiCell.swift in Sources */,
 				F19B545C27DB55E80048C713 /* FourthNavigationView.swift in Sources */,
+				F189E6AF28001D0600D32B6F /* LoginModelWithApi.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
