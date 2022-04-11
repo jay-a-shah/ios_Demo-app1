@@ -22,13 +22,7 @@ class MainStoryBoardCoordinator: Coordinator{
         }
     }
     
-    func finishToRoot() {
-        
-    }
-    
-    func stop() {
-        
-    }
+
     func mainStoryBoard(){
         if let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "uiComponentsViewController") as? UiComponentsViewController{
             mainVC.coordinator = self
@@ -51,5 +45,12 @@ class MainStoryBoardCoordinator: Coordinator{
             let mvvmCoordinator = MVVMCoordinator(navCon)
             mvvmCoordinator.start()
         }
+    }
+    func finishToRoot() {
+        
+    }
+    
+    func stop() {
+        
     }
 }

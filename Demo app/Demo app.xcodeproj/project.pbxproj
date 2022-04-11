@@ -26,7 +26,7 @@
 		F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AD27E094C20010BD13 /* Coordinator.swift */; };
 		F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AF27E095530010BD13 /* AppCoordinator.swift */; };
 		F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */; };
-		F158AE5927FEF6D20073EB46 /* LoginWithMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */; };
+		F158AE5927FEF6D20073EB46 /* LoginWithMVVMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5827FEF6D20073EB46 /* LoginWithMVVMVC.swift */; };
 		F158AE5B27FEF6E80073EB46 /* LoginWithMVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */; };
 		F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5C27FEF95A0073EB46 /* LoginModel.swift */; };
 		F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */; };
@@ -113,7 +113,7 @@
 		F14B90AD27E094C20010BD13 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F14B90AF27E095530010BD13 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBoardCoordinator.swift; sourceTree = "<group>"; };
-		F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithMVVM.swift; sourceTree = "<group>"; };
+		F158AE5827FEF6D20073EB46 /* LoginWithMVVMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithMVVMVC.swift; sourceTree = "<group>"; };
 		F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithMVVM.storyboard; sourceTree = "<group>"; };
 		F158AE5C27FEF95A0073EB46 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		F158AE5E27FEFADD0073EB46 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -336,7 +336,7 @@
 		F158AE5627FEF69B0073EB46 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F158AE5827FEF6D20073EB46 /* LoginWithMVVM.swift */,
+				F158AE5827FEF6D20073EB46 /* LoginWithMVVMVC.swift */,
 				F158AE5A27FEF6E80073EB46 /* LoginWithMVVM.storyboard */,
 			);
 			path = View;
@@ -712,7 +712,7 @@
 				F158AE5D27FEF95A0073EB46 /* LoginModel.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F158AE5F27FEFADD0073EB46 /* LoginPresenter.swift in Sources */,
-				F158AE5927FEF6D20073EB46 /* LoginWithMVVM.swift in Sources */,
+				F158AE5927FEF6D20073EB46 /* LoginWithMVVMVC.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F19B545627DB4A4D0048C713 /* FirstNavigationView.swift in Sources */,
 				F1EBF35227F1CD630032A671 /* CreateUserViewController.swift in Sources */,

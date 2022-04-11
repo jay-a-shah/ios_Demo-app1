@@ -23,11 +23,11 @@ class MVVMCoordinator: Coordinator{
     }
     
     func finishToRoot() {
-        
+        navController?.popToRootViewController(animated: true)
     }
     
     func stop() {
-    
+        navController?.popViewController(animated: true)
     }
     
     

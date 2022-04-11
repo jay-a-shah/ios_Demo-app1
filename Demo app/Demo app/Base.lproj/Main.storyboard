@@ -125,7 +125,6 @@
                                                     <color key="baseBackgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="goToCollectionViewWithApi:" destination="GGD-8g-PPX" eventType="touchUpInside" id="uTM-Xc-Lj5"/>
                                                     <action selector="goToMvvmController:" destination="GGD-8g-PPX" eventType="touchUpInside" id="c20-0N-yD3"/>
                                                 </connections>
                                             </button>
