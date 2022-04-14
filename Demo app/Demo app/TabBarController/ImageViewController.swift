@@ -8,14 +8,19 @@
 import UIKit
 
 class ImageViewController: UIViewController {
-    
-    //MARK: - Outlets
-    @IBOutlet weak var imageView: UIImageView!
    
+    //MARK: - Outlets
+    @IBOutlet weak var btnAddPhoto: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.layer.cornerRadius = 75
+        imageView.layer.cornerRadius = CGFloat(Constants.SEVENTY)
+        btnAddPhoto.layer.masksToBounds = false
+        btnAddPhoto.layer.shadowRadius = CGFloat(Constants.THIRTY)
+        btnAddPhoto.layer.shadowColor = UIColor.black.cgColor
+        btnAddPhoto.layer.shadowOffset = CGSize(width: Constants.imageWidth, height: Constants.imageWidth)
     }
 }
 
@@ -25,18 +30,19 @@ extension ImageViewController: UIImagePickerControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] else{
             return
+            
         }
         self.imageView.image = image as? UIImage
         dismiss(animated: true, completion: nil)
     }
 }
 
-//MARK: - UINavigationControllerDelegate
+//MARK: -  UINavigationControllerDelegate
 extension ImageViewController: UINavigationControllerDelegate{
 }
 
-//MARK: - Outlet Action
-extension ImageViewController{
+//MARK: - Outlet Actions
+extension ImageViewController {
     
     @IBAction func pickImage(_ sender: UIButton) {
         let imagePicker = UIImagePickerController()

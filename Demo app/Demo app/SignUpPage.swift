@@ -24,13 +24,12 @@ class SignUpPage: UIViewController {
     var timer: Timer?
     var value:Float = Constants.valueForProgressBar
     var pageControlImages: [String] = ["FacebookLogo","googleLogo","LogoOfEye","LogoOfLoginScreen"]
-
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = Constants.titleLoginPage
     }
-   
 }
 //MARK: - OutLet Action
 extension SignUpPage {

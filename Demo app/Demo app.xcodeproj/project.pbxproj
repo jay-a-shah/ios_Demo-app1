@@ -20,13 +20,15 @@
 		F13DAB2F278D590C00D427BC /* Demo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB2E278D590C00D427BC /* Demo_appTests.swift */; };
 		F13DAB39278D590C00D427BC /* Demo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB38278D590C00D427BC /* Demo_appUITests.swift */; };
 		F13DAB3B278D590C00D427BC /* Demo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */; };
-		F176B57F27F2CA7400BBBB24 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F176B57E27F2CA7300BBBB24 /* Identifiers.swift */; };
+		F172E86327D8781E003D24DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86227D8781E003D24DA /* MapViewController.swift */; };
+		F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86427D8A0F2003D24DA /* DatePickerView.swift */; };
+		F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86627D8B046003D24DA /* UiComponentsViewController.swift */; };
 		F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59D27CCA8E400560B1F /* LoginScreen.swift */; };
 		F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */; };
 		F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F127D5DB9F00B8076D /* PageViewController.swift */; };
 		F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F327D60C0100B8076D /* LoginPage.swift */; };
 		F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F527D61BEE00B8076D /* WebViewController.swift */; };
-		F18FC51A27E1A5CA0004A1BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18FC51927E1A5CA0004A1BB /* Constants.swift */; };
+		F190818728094B7200439C88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0B27F5C07000F52CF2 /* Constants.swift */; };
 		F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */; };
 		F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */; };
 		F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */; };
@@ -37,6 +39,7 @@
 		F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590C27D773B90088E9BF /* ImageViewController.swift */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
+		F1E93E9227F5C2D20059253A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,13 +77,14 @@
 		F13DAB34278D590C00D427BC /* Demo appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB38278D590C00D427BC /* Demo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITests.swift; sourceTree = "<group>"; };
 		F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F176B57E27F2CA7300BBBB24 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		F172E86227D8781E003D24DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F172E86427D8A0F2003D24DA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		F172E86627D8B046003D24DA /* UiComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiComponentsViewController.swift; sourceTree = "<group>"; };
 		F18AC59D27CCA8E400560B1F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		F18AC59F27CCE6BE00560B1F /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		F18AC8F127D5DB9F00B8076D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F18AC8F327D60C0100B8076D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F18AC8F527D61BEE00B8076D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		F18FC51927E1A5CA0004A1BB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionCell.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		F199590C27D773B90088E9BF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F1D4BA0B27F5C07000F52CF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +147,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
-				F176B57D27F2C72E00BBBB24 /* Utils */,
+				F1D4BA0A27F5C07000F52CF2 /* Utils */,
 				F199590B27D750E90088E9BF /* TabBarController */,
 				F1C7DFB627D20D1D001456F3 /* UICollectionView */,
 				F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */,
@@ -162,6 +168,8 @@
 				F108299F27D0E9B6006D0372 /* SizeClassViewController.swift */,
 				F18AC8F127D5DB9F00B8076D /* PageViewController.swift */,
 				F18AC8F327D60C0100B8076D /* LoginPage.swift */,
+				F172E86427D8A0F2003D24DA /* DatePickerView.swift */,
+				F172E86627D8B046003D24DA /* UiComponentsViewController.swift */,
 			);
 			path = "Demo app";
 			sourceTree = "<group>";
@@ -183,15 +191,6 @@
 			path = "Demo appUITests";
 			sourceTree = "<group>";
 		};
-		F176B57D27F2C72E00BBBB24 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				F18FC51927E1A5CA0004A1BB /* Constants.swift */,
-				F176B57E27F2CA7300BBBB24 /* Identifiers.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		F199590B27D750E90088E9BF /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +198,7 @@
 				F199590727D7372F0088E9BF /* TabBarController.swift */,
 				F199590527D72C220088E9BF /* TabBarController.storyboard */,
 				F199590C27D773B90088E9BF /* ImageViewController.swift */,
+				F172E86227D8781E003D24DA /* MapViewController.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -220,6 +220,15 @@
 				F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		F1D4BA0A27F5C07000F52CF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1D4BA0B27F5C07000F52CF2 /* Constants.swift */,
+				F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,14 +366,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18FC51A27E1A5CA0004A1BB /* Constants.swift in Sources */,
+				F190818728094B7200439C88 /* Constants.swift in Sources */,
+				F1E93E9227F5C2D20059253A /* Identifiers.swift in Sources */,
 				F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */,
 				F199590827D7372F0088E9BF /* TabBarController.swift in Sources */,
+				F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */,
 				F195D40927D2347A009FE2A1 /* UiPageControlViewController.swift in Sources */,
 				F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */,
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
+				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
+				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
@@ -375,7 +388,6 @@
 				F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */,
 				F108299C27D0D2E7006D0372 /* UiTableViewController.swift in Sources */,
 				F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */,
-				F176B57F27F2CA7400BBBB24 /* Identifiers.swift in Sources */,
 				F18AC59E27CCA8E400560B1F /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

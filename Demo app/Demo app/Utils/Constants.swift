@@ -27,4 +27,15 @@ struct Constants{
     static let THIRTY = 30
     static let footer = "footer"
     static let imageFacebook = "FacebookLogo"
+    static let gandinagarLatitude = 23.2156
+    static let gandinagarLongitude = 72.6369
+    static let delhiLatitude = 21.1702
+    static let mumbaiLatitude = 19.0760
+    static let suratLatitude = 28.7041
+    static let suratLongitude = 77.1025
+    static let mumbaiLongitude = 72.8777
+    static let delhiLongitude = 72.8311
+    static let btnCancel = "Cancel"
+    static let btnDone = "Done"
+    static let imageWidth = 200
 }

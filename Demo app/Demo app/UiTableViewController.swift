@@ -31,6 +31,7 @@ class UiTableViewController: UIViewController {
         self.tableView.addSubview(self.refreshControl)
     }
 }
+
 //MARK: - UITableView Delegate
 extension UiTableViewController: UITableViewDelegate{
     
@@ -38,6 +39,7 @@ extension UiTableViewController: UITableViewDelegate{
         print("You Tapped Me")
     }
 }
+
 //MARK: - UITableView DataSource
 extension UiTableViewController: UITableViewDataSource{
     
