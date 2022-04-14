@@ -11,7 +11,7 @@ protocol TextDelegate {
     func sendText(text: String)
 }
 
-class SecondViewController: UIViewController{
+class SecondViewController: UIViewController {
     
     //MARK: - Outlet
     @IBOutlet weak var txtfield: UITextField!
@@ -27,6 +27,7 @@ class SecondViewController: UIViewController{
 
 //MARK: - Outlet Action
 extension SecondViewController{
+    
     @IBAction func goToAnotherView(_ sender: UIButton) {
         delegate?.sendText(text: txtfield.text ?? Constants.defaultValueInString)
         dismiss(animated: true, completion: nil)

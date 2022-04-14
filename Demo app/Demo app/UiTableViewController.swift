@@ -16,8 +16,7 @@ class UiTableViewController: UIViewController {
     var names = ["abc","pqr","xyz"]
     var sectionFirst = Constants.ONE
     var sectionSecond = Constants.TWO
-    lazy var refreshControl: UIRefreshControl = {
-        let refreshControl = UIRefreshControl()
+    lazy var refreshControl: UIRefreshControl = { let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: .valueChanged)
         refreshControl.tintColor = UIColor.green
         return refreshControl
@@ -31,6 +30,7 @@ class UiTableViewController: UIViewController {
         self.tableView.addSubview(self.refreshControl)
     }
 }
+
 //MARK: - UITableView Delegate
 extension UiTableViewController: UITableViewDelegate{
     
@@ -38,6 +38,7 @@ extension UiTableViewController: UITableViewDelegate{
         print("You Tapped Me")
     }
 }
+
 //MARK: - UITableView DataSource
 extension UiTableViewController: UITableViewDataSource{
     

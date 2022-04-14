@@ -8,6 +8,7 @@
 import Foundation
 
 enum Identifiers: String{
+    case loginScreenViewController = "loginScreen"
     case signUpPageViewController = "signUpPage"
     case loginPageViewController = "loginPage"
     case tableViewCell = "cellOne"

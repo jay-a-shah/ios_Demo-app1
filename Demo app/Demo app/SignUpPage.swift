@@ -30,7 +30,6 @@ class SignUpPage: UIViewController {
         super.viewDidLoad()
         self.title = Constants.titleLoginPage
     }
-   
 }
 //MARK: - OutLet Action
 extension SignUpPage {

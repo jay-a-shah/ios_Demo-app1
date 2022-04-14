@@ -27,4 +27,8 @@ struct Constants{
     static let THIRTY = 30
     static let footer = "footer"
     static let imageFacebook = "FacebookLogo"
+    static let cancelBarButton = "Cancel"
+    static let doneBarButton = "Done"
+    
+    
 }

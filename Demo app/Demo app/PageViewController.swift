@@ -27,6 +27,10 @@ class PageViewController: UIPageViewController {
     }
 }
 
+//MARK: - UIPageViewControllerDelegate
+extension PageViewController: UIPageViewControllerDelegate {
+}
+
 //MARK: - UIPageViewControllerDataSource
 extension PageViewController: UIPageViewControllerDataSource {
     
@@ -35,7 +39,7 @@ extension PageViewController: UIPageViewControllerDataSource {
             return nil
         }
         let previousIndex = viewControllerIndex - Constants.ONE
-        guard previousIndex >= Constants.ZERO	 else {
+        guard previousIndex >= Constants.ZERO else {
             return nil
         }
         return viewControllerList[previousIndex]
