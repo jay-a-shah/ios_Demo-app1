@@ -33,7 +33,7 @@ extension ViewController {
     @IBAction func goToSecondView(_ sender: UIButton) {
         if let controller = storyboard?.instantiateViewController(withIdentifier: Constants.secondViewController) as? SecondViewController {
             controller.delegate = self
-            self.present(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
     

@@ -13,4 +13,5 @@ enum Identifiers: String{
     case tableViewCell = "cellOne"
     case signUpPageBasicAutoLayoutViewController = "signuppage"
     case collectionViewCell = "CollectionViewCell"
+    case tableViewTabBarCell = "cell"
 }

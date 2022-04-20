@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ui Components-->
         <scene sceneID="jjI-ub-vHa">
             <objects>
                 <viewController id="GGD-8g-PPX" sceneMemberID="viewController">
@@ -106,7 +106,7 @@
                             <constraint firstItem="hdg-Ky-f6F" firstAttribute="bottom" secondItem="hRi-89-6vh" secondAttribute="bottom" id="no9-6M-EtD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J6y-Iy-ZjR"/>
+                    <navigationItem key="navigationItem" title="Ui Components" id="J6y-Iy-ZjR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5d6-Mh-hjl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="3555" y="-567"/>
         </scene>
-        <!--Login Screen-->
+        <!--Basic Auto Layout-->
         <scene sceneID="adF-EF-mvq">
             <objects>
                 <viewController storyboardIdentifier="loginScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aPm-Ln-YCC" customClass="LoginScreen" customModule="Demo_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -224,6 +224,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goToSignUpScreen:" destination="aPm-Ln-YCC" eventType="touchUpInside" id="iZK-JO-QSH"/>
+                                    <segue destination="GTQ-PR-2yL" kind="show" id="hYB-AP-YtA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="556-a7-8zQ">
@@ -269,7 +270,7 @@
                             <constraint firstItem="QNE-M6-eCH" firstAttribute="leading" secondItem="hKr-g2-yZx" secondAttribute="leading" constant="20" id="y7t-Ss-h49"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DRZ-VI-2i3"/>
+                    <navigationItem key="navigationItem" title="Basic Auto Layout" id="DRZ-VI-2i3"/>
                     <connections>
                         <outlet property="btnSignUpScreen" destination="hOj-vP-4ld" id="mve-7h-KgL"/>
                     </connections>
@@ -287,7 +288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lyR-tD-jNS">
-                                <rect key="frame" x="30" y="242" width="354" height="35"/>
+                                <rect key="frame" x="30" y="286" width="354" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Zzq-p1-b05"/>
                                 </constraints>
@@ -295,7 +296,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoOfLoginScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KEP-lS-ygs">
-                                <rect key="frame" x="147" y="82" width="120" height="120"/>
+                                <rect key="frame" x="147" y="126" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.83632174869999998" green="0.5154008014" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="PMg-ei-N1Z"/>
@@ -303,7 +304,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQY-w9-Uwu">
-                                <rect key="frame" x="30" y="312" width="354" height="35"/>
+                                <rect key="frame" x="30" y="356" width="354" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Skl-ec-u21"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="n1M-iF-g7G"/>
@@ -312,7 +313,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="bezel" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AtJ-IJ-c4j" userLabel="Password">
-                                <rect key="frame" x="30" y="387" width="354" height="35"/>
+                                <rect key="frame" x="30" y="431" width="354" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="HOq-An-RNd"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="S73-v9-gV5"/>
@@ -322,7 +323,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjo-lE-mFQ">
-                                <rect key="frame" x="30" y="464" width="354" height="51"/>
+                                <rect key="frame" x="30" y="508" width="354" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="JSf-Mf-67s"/>
                                 </constraints>
@@ -340,7 +341,7 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO5-AQ-52T">
-                                <rect key="frame" x="190.5" y="533" width="33" height="37"/>
+                                <rect key="frame" x="190.5" y="577" width="33" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -348,21 +349,21 @@
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YK6-8a-WAk" userLabel="LeftDivider">
-                                <rect key="frame" x="30" y="550.5" width="150.5" height="2"/>
+                                <rect key="frame" x="30" y="594.5" width="150.5" height="2"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="OdW-g8-kfl"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAK-5Y-UA6" userLabel="RightDivider">
-                                <rect key="frame" x="223.5" y="550.5" width="160.5" height="2"/>
+                                <rect key="frame" x="223.5" y="594.5" width="160.5" height="2"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="EUV-kg-0e3"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7o-zs-uMa">
-                                <rect key="frame" x="30" y="740.5" width="354" height="41"/>
+                                <rect key="frame" x="30" y="784.5" width="354" height="41"/>
                                 <attributedString key="attributedText">
                                     <fragment content="By signing up you accept the ">
                                         <attributes>
@@ -396,7 +397,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-jH-0Zs">
-                                <rect key="frame" x="30" y="655" width="354" height="45.5"/>
+                                <rect key="frame" x="30" y="699" width="354" height="45.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray">
                                     <attributedString key="attributedTitle">
@@ -411,13 +412,13 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoOfEye" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-v1-0lh" userLabel="EyeLogo">
-                                <rect key="frame" x="349" y="387" width="35" height="35"/>
+                                <rect key="frame" x="349" y="431" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DcR-v1-0lh" secondAttribute="height" id="x0f-Zp-ANf"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVP-ul-kcI">
-                                <rect key="frame" x="30" y="585" width="354" height="50"/>
+                                <rect key="frame" x="30" y="629" width="354" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EoB-qo-hN9"/>
                                 </constraints>
@@ -428,19 +429,19 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-LB-D7A">
-                                <rect key="frame" x="30" y="585" width="50" height="50"/>
+                                <rect key="frame" x="30" y="629" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NlD-LB-D7A" secondAttribute="height" id="vig-SJ-rOH"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoogleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QgA-aU-qSn" userLabel="GoogleLogo">
-                                <rect key="frame" x="30" y="655" width="45.5" height="45.5"/>
+                                <rect key="frame" x="30" y="699" width="45.5" height="45.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QgA-aU-qSn" secondAttribute="height" id="t6o-CA-RGJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xN-5Z-XPr">
-                                <rect key="frame" x="20" y="801.5" width="374" height="27.5"/>
+                                <rect key="frame" x="20" y="845.5" width="374" height="27.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Already have an account? ">
                                         <attributes>
@@ -511,6 +512,7 @@
                             <constraint firstItem="KEP-lS-ygs" firstAttribute="top" secondItem="qMx-i7-8Np" secondAttribute="top" constant="38" id="xlj-0d-Kgq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FDz-d0-qCm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1K-9x-3L8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,7 +521,7 @@
         <!--Navigation Controller-->
         <scene sceneID="J2X-ad-go8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tCE-qc-HMI" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="tCE-qc-HMI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i8q-24-mh1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
