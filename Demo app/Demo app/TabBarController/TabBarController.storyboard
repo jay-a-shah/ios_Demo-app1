@@ -127,21 +127,20 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="KY3-Lf-0v9">
-                                <rect key="frame" x="10" y="138" width="394" height="619"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Y3L-7Z-QRa">
-                                        <rect key="frame" x="0.0" y="44.5" width="394" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y3L-7Z-QRa" id="7bL-wK-as5">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-gp-kaO">
+                                <rect key="frame" x="20" y="772" width="374" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OTW-cQ-qce"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="toChangeSegment:" destination="tXi-YJ-ynB" eventType="valueChanged" id="HkR-al-srh"/>
+                                </connections>
+                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ZZI-9V-9ig">
                                 <rect key="frame" x="10" y="138" width="394" height="619"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -211,40 +210,43 @@
                                     <action selector="onclickAddItems:" destination="tXi-YJ-ynB" eventType="valueChanged" id="Hvp-p6-ciu"/>
                                 </connections>
                             </stepper>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-gp-kaO">
-                                <rect key="frame" x="20" y="772" width="374" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OTW-cQ-qce"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
-                                </segments>
-                                <connections>
-                                    <action selector="toChangeSegment:" destination="tXi-YJ-ynB" eventType="valueChanged" id="HkR-al-srh"/>
-                                </connections>
-                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KY3-Lf-0v9">
+                                <rect key="frame" x="10" y="94" width="394" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Y3L-7Z-QRa">
+                                        <rect key="frame" x="0.0" y="44.5" width="394" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y3L-7Z-QRa" id="7bL-wK-as5">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E7D-wU-lsn"/>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CkW-gp-kaO" firstAttribute="top" secondItem="t4z-cc-ach" secondAttribute="bottom" constant="20" id="2Zg-oj-E2B"/>
                             <constraint firstItem="CkW-gp-kaO" firstAttribute="leading" secondItem="E7D-wU-lsn" secondAttribute="leading" constant="20" id="8oz-bN-20i"/>
-                            <constraint firstItem="ZZI-9V-9ig" firstAttribute="top" secondItem="yTb-51-Qr0" secondAttribute="bottom" constant="10" id="DC2-RY-vu3"/>
                             <constraint firstItem="E7D-wU-lsn" firstAttribute="trailing" secondItem="CkW-gp-kaO" secondAttribute="trailing" constant="20" id="DoK-S1-ZYA"/>
                             <constraint firstItem="E7D-wU-lsn" firstAttribute="trailing" secondItem="Pbx-2C-WOU" secondAttribute="trailing" constant="50" id="HXy-0b-JzT"/>
                             <constraint firstItem="E7D-wU-lsn" firstAttribute="bottom" secondItem="CkW-gp-kaO" secondAttribute="bottom" constant="10" id="OYf-Q7-TU0"/>
                             <constraint firstItem="Qid-QJ-mcW" firstAttribute="centerX" secondItem="E7D-wU-lsn" secondAttribute="centerX" id="RdI-gB-JUY"/>
                             <constraint firstItem="Qid-QJ-mcW" firstAttribute="centerY" secondItem="E7D-wU-lsn" secondAttribute="centerY" id="TKB-DC-ypA"/>
-                            <constraint firstItem="Qid-QJ-mcW" firstAttribute="top" secondItem="Pbx-2C-WOU" secondAttribute="bottom" constant="213" id="Vv5-KB-PhA"/>
+                            <constraint firstItem="CkW-gp-kaO" firstAttribute="top" secondItem="ZZI-9V-9ig" secondAttribute="bottom" constant="10" id="Tdd-WI-B7N"/>
+                            <constraint firstItem="KY3-Lf-0v9" firstAttribute="top" secondItem="yTb-51-Qr0" secondAttribute="bottom" constant="10" id="VkG-2A-FEE"/>
                             <constraint firstItem="yTb-51-Qr0" firstAttribute="top" secondItem="E7D-wU-lsn" secondAttribute="top" constant="10" id="YPY-QE-BaH"/>
                             <constraint firstItem="Pbx-2C-WOU" firstAttribute="top" secondItem="yTb-51-Qr0" secondAttribute="bottom" constant="20" id="bki-mw-YYD"/>
+                            <constraint firstItem="ZZI-9V-9ig" firstAttribute="top" secondItem="yTb-51-Qr0" secondAttribute="bottom" constant="10" id="d3T-6O-FEW"/>
                             <constraint firstItem="yTb-51-Qr0" firstAttribute="leading" secondItem="E7D-wU-lsn" secondAttribute="leading" constant="20" id="eh9-3L-cqB"/>
                             <constraint firstItem="t4z-cc-ach" firstAttribute="centerX" secondItem="E7D-wU-lsn" secondAttribute="centerX" id="gq5-Na-icG"/>
+                            <constraint firstItem="CkW-gp-kaO" firstAttribute="top" secondItem="KY3-Lf-0v9" secondAttribute="bottom" id="k64-0d-tlE"/>
+                            <constraint firstItem="KY3-Lf-0v9" firstAttribute="leading" secondItem="E7D-wU-lsn" secondAttribute="leading" constant="10" id="lk2-Gc-dYh"/>
                             <constraint firstItem="Pbx-2C-WOU" firstAttribute="leading" secondItem="E7D-wU-lsn" secondAttribute="leading" constant="50" id="nRx-4q-KCs"/>
                             <constraint firstAttribute="trailing" secondItem="yTb-51-Qr0" secondAttribute="trailing" constant="20" id="o4C-xE-hEk"/>
-                            <constraint firstItem="CkW-gp-kaO" firstAttribute="top" secondItem="ZZI-9V-9ig" secondAttribute="bottom" constant="16" id="xiI-Co-a5k"/>
+                            <constraint firstItem="E7D-wU-lsn" firstAttribute="trailing" secondItem="KY3-Lf-0v9" secondAttribute="trailing" constant="10" id="pMj-Yy-xHZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" badgeValue="5" id="k3E-A8-ZsC">
@@ -264,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWe-WZ-TVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363.768115942029" y="-655.58035714285711"/>
+            <point key="canvasLocation" x="365" y="-655"/>
         </scene>
         <!--Item-->
         <scene sceneID="cFR-UK-S3i">

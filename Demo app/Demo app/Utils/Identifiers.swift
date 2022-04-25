@@ -14,4 +14,9 @@ enum Identifiers: String{
     case signUpPageBasicAutoLayoutViewController = "signuppage"
     case collectionViewCell = "CollectionViewCell"
     case tableViewTabBarCell = "cell"
+    case secondNavigationController = "secondNavigationView"
+    case thirdeNavigationController = "thirdNavigationView"
+    case fourthNavigationController = "fourthNavigationView"
+    case uiComponentsViewController = "uiComponentsViewController"
+    case mainStoryboard = "Main"
 }

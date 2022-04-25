@@ -203,6 +203,16 @@
             </objects>
             <point key="canvasLocation" x="1187" y="-134"/>
         </scene>
+        <!--NavigationController-->
+        <scene sceneID="el7-GU-rQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NavigationController" id="wvj-tL-a4R" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gKd-UA-PW0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vX-kY-lav" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="110"/>
+        </scene>
         <!--Ui Components View Controller-->
         <scene sceneID="iEK-75-7jc">
             <objects>
@@ -215,7 +225,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wki-2I-hJE">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="802"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="753.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hm-OR-6gy">
                                                 <rect key="frame" x="20" y="40" width="374" height="47"/>
@@ -291,14 +301,36 @@
                                                     <segue destination="MCj-Io-TV1" kind="show" id="Avc-wh-tN2"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Tf-B0-6Uo">
+                                                <rect key="frame" x="30" y="462" width="354" height="79.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="dynamic">
+                                                    <backgroundConfiguration key="background" cornerRadius="20"/>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Navigation Controller Example">
+                                                            <attributes>
+                                                                <font key="NSFont" size="30" name="MarkerFelt-Thin"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseForegroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.98106676339999999" green="0.4480973345" blue="0.52641180119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="wvj-tL-a4R" kind="show" id="TFn-EL-WL8"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="3hm-OR-6gy" secondAttribute="trailing" constant="20" id="0dV-dN-9jy"/>
                                             <constraint firstItem="7zR-fW-pYz" firstAttribute="leading" secondItem="wki-2I-hJE" secondAttribute="leading" constant="20" id="1Y6-7A-add"/>
                                             <constraint firstItem="Gpd-G5-AmK" firstAttribute="top" secondItem="rjd-G2-Wgs" secondAttribute="bottom" constant="30" id="3cC-d2-HDT"/>
+                                            <constraint firstAttribute="trailing" secondItem="1Tf-B0-6Uo" secondAttribute="trailing" constant="30" id="89u-iz-0TU"/>
                                             <constraint firstItem="3hm-OR-6gy" firstAttribute="top" secondItem="wki-2I-hJE" secondAttribute="top" constant="40" id="8q8-3z-x3V"/>
                                             <constraint firstItem="rjd-G2-Wgs" firstAttribute="leading" secondItem="wki-2I-hJE" secondAttribute="leading" constant="20" id="HSh-dl-oYm"/>
+                                            <constraint firstItem="1Tf-B0-6Uo" firstAttribute="leading" secondItem="wki-2I-hJE" secondAttribute="leading" constant="30" id="NQs-EM-5VQ"/>
                                             <constraint firstItem="ScJ-dL-BUz" firstAttribute="top" secondItem="3hm-OR-6gy" secondAttribute="bottom" constant="20" id="Rdf-uq-W9P"/>
                                             <constraint firstAttribute="trailing" secondItem="7zR-fW-pYz" secondAttribute="trailing" constant="20" id="W7h-a4-8aY"/>
                                             <constraint firstAttribute="trailing" secondItem="Gpd-G5-AmK" secondAttribute="trailing" constant="20" id="XTb-wN-A8x"/>
@@ -309,9 +341,10 @@
                                             <constraint firstItem="Gpd-G5-AmK" firstAttribute="leading" secondItem="wki-2I-hJE" secondAttribute="leading" constant="20" id="g9d-9m-heE"/>
                                             <constraint firstItem="MvP-SG-OgO" firstAttribute="leading" secondItem="wki-2I-hJE" secondAttribute="leading" constant="20" id="hEw-Xh-cR0"/>
                                             <constraint firstItem="MvP-SG-OgO" firstAttribute="top" secondItem="Gpd-G5-AmK" secondAttribute="bottom" constant="20" id="ikr-GT-Csp"/>
-                                            <constraint firstAttribute="bottom" secondItem="7zR-fW-pYz" secondAttribute="bottom" constant="360" id="oFV-Zf-jp8"/>
+                                            <constraint firstAttribute="bottom" secondItem="1Tf-B0-6Uo" secondAttribute="bottom" constant="212" id="lcz-eP-uw8"/>
                                             <constraint firstAttribute="trailing" secondItem="rjd-G2-Wgs" secondAttribute="trailing" constant="20" id="pFU-MR-0Uk"/>
                                             <constraint firstItem="7zR-fW-pYz" firstAttribute="top" secondItem="MvP-SG-OgO" secondAttribute="bottom" constant="30" id="rSd-rR-obE"/>
+                                            <constraint firstItem="1Tf-B0-6Uo" firstAttribute="top" secondItem="7zR-fW-pYz" secondAttribute="bottom" constant="20" id="s77-y7-rM1"/>
                                             <constraint firstItem="rjd-G2-Wgs" firstAttribute="top" secondItem="ScJ-dL-BUz" secondAttribute="bottom" constant="20" id="xvi-wx-w6Y"/>
                                         </constraints>
                                     </view>
