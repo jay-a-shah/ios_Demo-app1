@@ -20,6 +20,9 @@
 		F13DAB2F278D590C00D427BC /* Demo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB2E278D590C00D427BC /* Demo_appTests.swift */; };
 		F13DAB39278D590C00D427BC /* Demo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB38278D590C00D427BC /* Demo_appUITests.swift */; };
 		F13DAB3B278D590C00D427BC /* Demo_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */; };
+		F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AD27E094C20010BD13 /* Coordinator.swift */; };
+		F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90AF27E095530010BD13 /* AppCoordinator.swift */; };
+		F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */; };
 		F172E86327D8781E003D24DA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86227D8781E003D24DA /* MapViewController.swift */; };
 		F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86427D8A0F2003D24DA /* DatePickerView.swift */; };
 		F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172E86627D8B046003D24DA /* UiComponentsViewController.swift */; };
@@ -28,7 +31,6 @@
 		F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F127D5DB9F00B8076D /* PageViewController.swift */; };
 		F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F327D60C0100B8076D /* LoginPage.swift */; };
 		F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F527D61BEE00B8076D /* WebViewController.swift */; };
-		F190818728094B7200439C88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0B27F5C07000F52CF2 /* Constants.swift */; };
 		F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */; };
 		F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */; };
 		F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */; };
@@ -37,9 +39,15 @@
 		F199590827D7372F0088E9BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590727D7372F0088E9BF /* TabBarController.swift */; };
 		F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590927D749FB0088E9BF /* HomeViewController.swift */; };
 		F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590C27D773B90088E9BF /* ImageViewController.swift */; };
+		F19B545427DB49A90048C713 /* NavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19B545327DB49A90048C713 /* NavigationController.storyboard */; };
+		F19B545627DB4A4D0048C713 /* FirstNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545527DB4A4D0048C713 /* FirstNavigationViewController.swift */; };
+		F19B545827DB4A670048C713 /* SecondNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545727DB4A670048C713 /* SecondNavigationViewController.swift */; };
+		F19B545A27DB4AAB0048C713 /* ThirdNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545927DB4AAB0048C713 /* ThirdNavigationViewController.swift */; };
+		F19B545C27DB55E80048C713 /* FourthNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B545B27DB55E80048C713 /* FourthNavigationViewController.swift */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
+		F1C28DEE281661640077AD6C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C28DEC2816615A0077AD6C /* Constants.swift */; };
+		F1C28DEF281661640077AD6C /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C28DED2816615A0077AD6C /* Identifiers.swift */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
-		F1E93E9227F5C2D20059253A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +85,9 @@
 		F13DAB34278D590C00D427BC /* Demo appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB38278D590C00D427BC /* Demo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITests.swift; sourceTree = "<group>"; };
 		F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F14B90AD27E094C20010BD13 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F14B90AF27E095530010BD13 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStoryBoardCoordinator.swift; sourceTree = "<group>"; };
 		F172E86227D8781E003D24DA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F172E86427D8A0F2003D24DA /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		F172E86627D8B046003D24DA /* UiComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiComponentsViewController.swift; sourceTree = "<group>"; };
@@ -93,10 +104,15 @@
 		F199590727D7372F0088E9BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F199590927D749FB0088E9BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F199590C27D773B90088E9BF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F19B545327DB49A90048C713 /* NavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationController.storyboard; sourceTree = "<group>"; };
+		F19B545527DB4A4D0048C713 /* FirstNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNavigationViewController.swift; sourceTree = "<group>"; };
+		F19B545727DB4A670048C713 /* SecondNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondNavigationViewController.swift; sourceTree = "<group>"; };
+		F19B545927DB4AAB0048C713 /* ThirdNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdNavigationViewController.swift; sourceTree = "<group>"; };
+		F19B545B27DB55E80048C713 /* FourthNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthNavigationViewController.swift; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
+		F1C28DEC2816615A0077AD6C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1C28DED2816615A0077AD6C /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		F1D4BA0B27F5C07000F52CF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +163,9 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
-				F1D4BA0A27F5C07000F52CF2 /* Utils */,
+				F1C28DEB2816615A0077AD6C /* Utils */,
+				F14B90AC27E094A00010BD13 /* Coordinator */,
+				F19B545227DB41AE0048C713 /* UI Navigation Controller */,
 				F199590B27D750E90088E9BF /* TabBarController */,
 				F1C7DFB627D20D1D001456F3 /* UICollectionView */,
 				F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */,
@@ -191,6 +209,16 @@
 			path = "Demo appUITests";
 			sourceTree = "<group>";
 		};
+		F14B90AC27E094A00010BD13 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F14B90AD27E094C20010BD13 /* Coordinator.swift */,
+				F14B90AF27E095530010BD13 /* AppCoordinator.swift */,
+				F14B90B127E0960A0010BD13 /* MainStoryBoardCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		F199590B27D750E90088E9BF /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +229,27 @@
 				F172E86227D8781E003D24DA /* MapViewController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		F19B545227DB41AE0048C713 /* UI Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F19B545327DB49A90048C713 /* NavigationController.storyboard */,
+				F19B545527DB4A4D0048C713 /* FirstNavigationViewController.swift */,
+				F19B545727DB4A670048C713 /* SecondNavigationViewController.swift */,
+				F19B545927DB4AAB0048C713 /* ThirdNavigationViewController.swift */,
+				F19B545B27DB55E80048C713 /* FourthNavigationViewController.swift */,
+			);
+			path = "UI Navigation Controller";
+			sourceTree = "<group>";
+		};
+		F1C28DEB2816615A0077AD6C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F1C28DEC2816615A0077AD6C /* Constants.swift */,
+				F1C28DED2816615A0077AD6C /* Identifiers.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */ = {
@@ -220,15 +269,6 @@
 				F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */,
 			);
 			path = UICollectionView;
-			sourceTree = "<group>";
-		};
-		F1D4BA0A27F5C07000F52CF2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				F1D4BA0B27F5C07000F52CF2 /* Constants.swift */,
-				F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +377,7 @@
 			files = (
 				F13DAB24278D590C00D427BC /* LaunchScreen.storyboard in Resources */,
 				F108299E27D0DCD4006D0372 /* SizeClassExample.storyboard in Resources */,
+				F19B545427DB49A90048C713 /* NavigationController.storyboard in Resources */,
 				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
 				F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */,
@@ -366,24 +407,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F190818728094B7200439C88 /* Constants.swift in Sources */,
-				F1E93E9227F5C2D20059253A /* Identifiers.swift in Sources */,
+				F1C28DEE281661640077AD6C /* Constants.swift in Sources */,
+				F1C28DEF281661640077AD6C /* Identifiers.swift in Sources */,
 				F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */,
 				F199590827D7372F0088E9BF /* TabBarController.swift in Sources */,
+				F14B90AE27E094C20010BD13 /* Coordinator.swift in Sources */,
+				F19B545827DB4A670048C713 /* SecondNavigationViewController.swift in Sources */,
+				F14B90B227E0960A0010BD13 /* MainStoryBoardCoordinator.swift in Sources */,
 				F172E86727D8B046003D24DA /* UiComponentsViewController.swift in Sources */,
 				F195D40927D2347A009FE2A1 /* UiPageControlViewController.swift in Sources */,
+				F14B90B027E095530010BD13 /* AppCoordinator.swift in Sources */,
 				F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */,
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
+				F19B545C27DB55E80048C713 /* FourthNavigationViewController.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
+				F19B545627DB4A4D0048C713 /* FirstNavigationViewController.swift in Sources */,
 				F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */,
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
+				F19B545A27DB4AAB0048C713 /* ThirdNavigationViewController.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,
 				F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */,
 				F108299C27D0D2E7006D0372 /* UiTableViewController.swift in Sources */,

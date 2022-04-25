@@ -38,4 +38,14 @@ struct Constants{
     static let btnCancel = "Cancel"
     static let btnDone = "Done"
     static let imageWidth = 200
+    static let titleFirstNavigationController = "First Navigation Controller"
+    static let titleSecondNavigationController = "Second View Controller"
+    static let btnSignOut = "Sign Out"
+    static let imageGear = "gear"
+    static let Systemimage = "image"
+    static let titleThirdNavigationController = "Third View Controller"
+    static let titleFourthNavigationController = "Fourth View Controller"
+    static let nothingInserted = "Nothing Inserted"
+    static let btnOK = "OK"
+    static let imagePerson = "person.circle"
 }
