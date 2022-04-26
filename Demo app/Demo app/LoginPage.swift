@@ -13,6 +13,7 @@ class LoginPage: UIViewController{
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var backgroundView: UIView!
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +30,13 @@ extension LoginPage{
         if( sender.selectedSegmentIndex == Constants.ZERO) {
             view.backgroundColor = .red
         }else if (sender.selectedSegmentIndex == Constants.ONE){
-            view.backgroundColor = .orange
+           view.backgroundColor = .orange
         }else if (sender.selectedSegmentIndex == Constants.TWO){
             view.backgroundColor = .black
         }else if (sender.selectedSegmentIndex == Constants.THREE){
             view.backgroundColor = .purple
         }else if (sender.selectedSegmentIndex == Constants.FOUR){
-            view.backgroundColor = .orange
+            view.backgroundColor = .blue
         }
     }
 }

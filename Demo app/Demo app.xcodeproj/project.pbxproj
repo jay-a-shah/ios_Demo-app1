@@ -11,6 +11,7 @@
 		F108299C27D0D2E7006D0372 /* UiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108299B27D0D2E7006D0372 /* UiTableViewController.swift */; };
 		F108299E27D0DCD4006D0372 /* SizeClassExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F108299D27D0DCD4006D0372 /* SizeClassExample.storyboard */; };
 		F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108299F27D0E9B6006D0372 /* SizeClassViewController.swift */; };
+		F127D8822818224800986D1C /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F127D8812818224800986D1C /* SignUpScreen.swift */; };
 		F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB17278D590B00D427BC /* AppDelegate.swift */; };
 		F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB19278D590B00D427BC /* SceneDelegate.swift */; };
 		F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13DAB1B278D590B00D427BC /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		F108299B27D0D2E7006D0372 /* UiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTableViewController.swift; sourceTree = "<group>"; };
 		F108299D27D0DCD4006D0372 /* SizeClassExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SizeClassExample.storyboard; sourceTree = "<group>"; };
 		F108299F27D0E9B6006D0372 /* SizeClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassViewController.swift; sourceTree = "<group>"; };
+		F127D8812818224800986D1C /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 		F13DAB14278D590B00D427BC /* Demo app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13DAB17278D590B00D427BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F13DAB19278D590B00D427BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				F18AC8F327D60C0100B8076D /* LoginPage.swift */,
 				F172E86427D8A0F2003D24DA /* DatePickerView.swift */,
 				F172E86627D8B046003D24DA /* UiComponentsViewController.swift */,
+				F127D8812818224800986D1C /* SignUpScreen.swift */,
 			);
 			path = "Demo app";
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
+				F127D8822818224800986D1C /* SignUpScreen.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,
 				F18AC5A027CCE6BE00560B1F /* SignUpPage.swift in Sources */,
 				F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */,

@@ -10,6 +10,9 @@ import UIKit
 class SignUpPage: UIViewController {
     
     //MARK: - Outlets
+    @IBOutlet weak var textViewBio: UITextView!
+    @IBOutlet weak var textFieldPassword: UITextField!
+    @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var btnTableView: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var mySwitch: UISwitch!
@@ -28,6 +31,9 @@ class SignUpPage: UIViewController {
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        textFieldEmail.delegate = self
+        textFieldPassword.delegate = self
+        textViewBio.delegate = self
         self.title = Constants.titleLoginPage
     }
 }
@@ -35,10 +41,11 @@ class SignUpPage: UIViewController {
 extension SignUpPage {
     
     @IBAction func sliderAction(_ sender: Any) {
-        ageNumberLabel.text = "\(Int(ageSlider.value))" }
+        ageNumberLabel.text = "\(Int(ageSlider.value))"
+    }
     
     @IBAction func switchAction(_ sender: UISwitch) {
-        view.backgroundColor = sender .isOn ? .gray : .brown
+        newview.backgroundColor = sender .isOn ? .gray : .brown
     }
     
     @IBAction func stepperAction(_ sender: UIStepper) {
@@ -57,5 +64,21 @@ extension SignUpPage {
             if self.progressView.progress == Float(Constants.ONE) {
                 self.timer?.invalidate()}
         })
+    }
+}
+
+extension SignUpPage: UITextFieldDelegate , UITextViewDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case textFieldEmail:
+            textFieldPassword.becomeFirstResponder()
+        case textFieldPassword:
+            textViewBio.becomeFirstResponder()
+        case textViewBio:
+            textViewBio.resignFirstResponder()
+        default:
+            break
+        }
+        return true
     }
 }

@@ -22,8 +22,8 @@ class LoginScreen: UIViewController {
 extension LoginScreen{
     
     @IBAction func goToSignUpScreen(_ sender: UIButton) {
-        if let signUpScreen = storyboard?.instantiateViewController(withIdentifier: Identifiers.signUpPageBasicAutoLayoutViewController.rawValue) as? SignUpPage {
-            self.present(signUpScreen, animated: true, completion: nil)
-        }
+//        if let signUpScreen = storyboard?.instantiateViewController(withIdentifier: Identifiers.signUpPageBasicAutoLayoutViewController.rawValue) as? SignUpPage {
+//            self.present(signUpScreen, animated: true, completion: nil)
+//        }
     }
 }
