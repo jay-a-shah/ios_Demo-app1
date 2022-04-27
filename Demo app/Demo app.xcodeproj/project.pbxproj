@@ -39,6 +39,14 @@
 		F199590827D7372F0088E9BF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590727D7372F0088E9BF /* TabBarController.swift */; };
 		F199590A27D749FB0088E9BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590927D749FB0088E9BF /* HomeViewController.swift */; };
 		F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F199590C27D773B90088E9BF /* ImageViewController.swift */; };
+		F1B3254E28196678001CFF8A /* CustomUiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3254D28196678001CFF8A /* CustomUiButton.swift */; };
+		F1B3255028196C06001CFF8A /* UILayoutDesign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B3254F28196C06001CFF8A /* UILayoutDesign.storyboard */; };
+		F1B32558281970A4001CFF8A /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32552281970A4001CFF8A /* DMSans-Regular.ttf */; };
+		F1B32559281970A4001CFF8A /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32553281970A4001CFF8A /* DMSans-Medium.ttf */; };
+		F1B3255A281970A4001CFF8A /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32554281970A4001CFF8A /* DMSans-Bold.ttf */; };
+		F1B3255B281970A4001CFF8A /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32555281970A4001CFF8A /* DMSans-BoldItalic.ttf */; };
+		F1B3255C281970A4001CFF8A /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32556281970A4001CFF8A /* DMSans-MediumItalic.ttf */; };
+		F1B3255D281970A4001CFF8A /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B32557281970A4001CFF8A /* DMSans-Italic.ttf */; };
 		F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */; };
 		F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */; };
 		F1E93E9227F5C2D20059253A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0C27F5C07000F52CF2 /* Identifiers.swift */; };
@@ -97,6 +105,14 @@
 		F199590727D7372F0088E9BF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F199590927D749FB0088E9BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F199590C27D773B90088E9BF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F1B3254D28196678001CFF8A /* CustomUiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiButton.swift; sourceTree = "<group>"; };
+		F1B3254F28196C06001CFF8A /* UILayoutDesign.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UILayoutDesign.storyboard; sourceTree = "<group>"; };
+		F1B32552281970A4001CFF8A /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		F1B32553281970A4001CFF8A /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		F1B32554281970A4001CFF8A /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		F1B32555281970A4001CFF8A /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F1B32556281970A4001CFF8A /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F1B32557281970A4001CFF8A /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Italic.ttf"; sourceTree = "<group>"; };
 		F1BC1F5427CF664C00433EA1 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		F1C7DFB427D20C4A001456F3 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		F1D4BA0B27F5C07000F52CF2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -151,6 +167,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F1B32551281970A4001CFF8A /* Fonts */,
 				F1944AB128194C5200E874E4 /* Custom Controls */,
 				F1D4BA0A27F5C07000F52CF2 /* Utils */,
 				F199590B27D750E90088E9BF /* TabBarController */,
@@ -201,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				F1944AB228194C8A00E874E4 /* CustomUITextField.swift */,
+				F1B3254D28196678001CFF8A /* CustomUiButton.swift */,
+				F1B3254F28196C06001CFF8A /* UILayoutDesign.storyboard */,
 			);
 			path = "Custom Controls";
 			sourceTree = "<group>";
@@ -215,6 +234,19 @@
 				F172E86227D8781E003D24DA /* MapViewController.swift */,
 			);
 			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		F1B32551281970A4001CFF8A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F1B32552281970A4001CFF8A /* DMSans-Regular.ttf */,
+				F1B32553281970A4001CFF8A /* DMSans-Medium.ttf */,
+				F1B32554281970A4001CFF8A /* DMSans-Bold.ttf */,
+				F1B32555281970A4001CFF8A /* DMSans-BoldItalic.ttf */,
+				F1B32556281970A4001CFF8A /* DMSans-MediumItalic.ttf */,
+				F1B32557281970A4001CFF8A /* DMSans-Italic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F1C7DFB127D1EA97001456F3 /* LoginAndSignUpScreen */ = {
@@ -351,11 +383,18 @@
 			files = (
 				F13DAB24278D590C00D427BC /* LaunchScreen.storyboard in Resources */,
 				F108299E27D0DCD4006D0372 /* SizeClassExample.storyboard in Resources */,
+				F1B3255D281970A4001CFF8A /* DMSans-Italic.ttf in Resources */,
 				F199590627D72C220088E9BF /* TabBarController.storyboard in Resources */,
+				F1B32558281970A4001CFF8A /* DMSans-Regular.ttf in Resources */,
 				F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */,
+				F1B32559281970A4001CFF8A /* DMSans-Medium.ttf in Resources */,
 				F1BC1F5527CF664D00433EA1 /* SignUpPage.storyboard in Resources */,
 				F13DAB21278D590C00D427BC /* Assets.xcassets in Resources */,
+				F1B3255028196C06001CFF8A /* UILayoutDesign.storyboard in Resources */,
 				F13DAB1F278D590B00D427BC /* Main.storyboard in Resources */,
+				F1B3255A281970A4001CFF8A /* DMSans-Bold.ttf in Resources */,
+				F1B3255C281970A4001CFF8A /* DMSans-MediumItalic.ttf in Resources */,
+				F1B3255B281970A4001CFF8A /* DMSans-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +429,7 @@
 				F1C7DFB727D20E8B001456F3 /* CollectionViewController.swift in Sources */,
 				F10829A027D0E9B6006D0372 /* SizeClassViewController.swift in Sources */,
 				F172E86527D8A0F2003D24DA /* DatePickerView.swift in Sources */,
+				F1B3254E28196678001CFF8A /* CustomUiButton.swift in Sources */,
 				F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */,
 				F127D8822818224800986D1C /* SignUpScreen.swift in Sources */,
 				F172E86327D8781E003D24DA /* MapViewController.swift in Sources */,

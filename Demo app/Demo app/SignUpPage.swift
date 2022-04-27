@@ -36,6 +36,9 @@ class SignUpPage: UIViewController {
         textViewBio.delegate = self
         self.title = Constants.titleLoginPage
     }
+    override func viewWillLayoutSubviews() {
+        print("Hello")
+    }
 }
 //MARK: - OutLet Action
 extension SignUpPage {
