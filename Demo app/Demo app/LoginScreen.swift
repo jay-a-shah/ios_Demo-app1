@@ -36,4 +36,5 @@ extension LoginScreen{
     @IBAction func goToLogin(_ sender: UIButton) {
         alert(customMessage: "Login Page Is Not Available")
     }
+    
 }

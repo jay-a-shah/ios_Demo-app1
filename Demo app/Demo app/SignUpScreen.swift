@@ -21,6 +21,7 @@ class SignUpScreen: UIViewController {
         textName.delegate = self
         textEmail.delegate = self
     }
+    
     func alert (customMessage: String){
         let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
@@ -47,7 +48,7 @@ extension SignUpScreen: UITextFieldDelegate {
 }
 //MARK: - Outlet Action
 extension SignUpScreen {
-    
+  
     @IBAction func btnSignUp(_ sender: UIButton) {
         alert(customMessage: "You Tapped to Sign Up ")
     }
