@@ -30,6 +30,7 @@
 		F18AC8F427D60C0100B8076D /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F327D60C0100B8076D /* LoginPage.swift */; };
 		F18AC8F627D61BEE00B8076D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18AC8F527D61BEE00B8076D /* WebViewController.swift */; };
 		F190818728094B7200439C88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D4BA0B27F5C07000F52CF2 /* Constants.swift */; };
+		F1944AB328194C8A00E874E4 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1944AB228194C8A00E874E4 /* CustomUITextField.swift */; };
 		F195D40427D20F4A009FE2A1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */; };
 		F195D40527D20F4A009FE2A1 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */; };
 		F195D40727D21452009FE2A1 /* ModelCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */; };
@@ -87,6 +88,7 @@
 		F18AC8F127D5DB9F00B8076D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		F18AC8F327D60C0100B8076D /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F18AC8F527D61BEE00B8076D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F1944AB228194C8A00E874E4 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		F195D40227D20F4A009FE2A1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		F195D40327D20F4A009FE2A1 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		F195D40627D21452009FE2A1 /* ModelCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionCell.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		F13DAB16278D590B00D427BC /* Demo app */ = {
 			isa = PBXGroup;
 			children = (
+				F1944AB128194C5200E874E4 /* Custom Controls */,
 				F1D4BA0A27F5C07000F52CF2 /* Utils */,
 				F199590B27D750E90088E9BF /* TabBarController */,
 				F1C7DFB627D20D1D001456F3 /* UICollectionView */,
@@ -192,6 +195,14 @@
 				F13DAB3A278D590C00D427BC /* Demo_appUITestsLaunchTests.swift */,
 			);
 			path = "Demo appUITests";
+			sourceTree = "<group>";
+		};
+		F1944AB128194C5200E874E4 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F1944AB228194C8A00E874E4 /* CustomUITextField.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 		F199590B27D750E90088E9BF /* TabBarController */ = {
@@ -387,6 +398,7 @@
 				F104E9D127A29F2700866005 /* SecondViewController.swift in Sources */,
 				F199590D27D773B90088E9BF /* ImageViewController.swift in Sources */,
 				F13DAB1C278D590B00D427BC /* ViewController.swift in Sources */,
+				F1944AB328194C8A00E874E4 /* CustomUITextField.swift in Sources */,
 				F13DAB18278D590B00D427BC /* AppDelegate.swift in Sources */,
 				F13DAB1A278D590B00D427BC /* SceneDelegate.swift in Sources */,
 				F18AC8F227D5DB9F00B8076D /* PageViewController.swift in Sources */,
