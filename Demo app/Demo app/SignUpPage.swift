@@ -67,18 +67,24 @@ extension SignUpPage {
     }
 }
 
-extension SignUpPage: UITextFieldDelegate , UITextViewDelegate{
+extension SignUpPage: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case textFieldEmail:
             textFieldPassword.becomeFirstResponder()
         case textFieldPassword:
             textViewBio.becomeFirstResponder()
-        case textViewBio:
-            textViewBio.resignFirstResponder()
         default:
             break
         }
         return true
+    }
+}
+extension SignUpPage: UITextViewDelegate {
+    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+        switch textView {
+        case textViewBio:
+            textViewBio.resiFirstResponder()
+        
     }
 }

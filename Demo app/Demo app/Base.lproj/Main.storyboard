@@ -402,7 +402,7 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-LB-D7A">
-                                                <rect key="frame" x="20" y="580" width="50" height="50"/>
+                                                <rect key="frame" x="20" y="585" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NlD-LB-D7A" secondAttribute="height" multiplier="1:1" id="xc3-zx-SaF"/>
                                                 </constraints>
@@ -426,7 +426,7 @@
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoogleLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="75J-Py-imB">
-                                                <rect key="frame" x="20" y="650" width="50" height="50"/>
+                                                <rect key="frame" x="20" y="655" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="75J-Py-imB" secondAttribute="height" multiplier="1:1" id="N6n-L2-RHh"/>
                                                 </constraints>
@@ -497,7 +497,7 @@
                                             <constraint firstItem="rVP-ul-kcI" firstAttribute="top" secondItem="KHi-2B-emA" secondAttribute="bottom" constant="30" id="NLF-ui-e8T"/>
                                             <constraint firstAttribute="trailing" secondItem="qnW-QW-6kN" secondAttribute="trailing" constant="20" id="O5Y-TP-65I"/>
                                             <constraint firstItem="n7o-zs-uMa" firstAttribute="top" secondItem="8ZO-jH-0Zs" secondAttribute="bottom" constant="40" id="PvW-Zk-VaU"/>
-                                            <constraint firstItem="NlD-LB-D7A" firstAttribute="height" secondItem="rVP-ul-kcI" secondAttribute="height" id="QOA-Ou-7e3"/>
+                                            <constraint firstItem="NlD-LB-D7A" firstAttribute="height" secondItem="rVP-ul-kcI" secondAttribute="height" multiplier="0.8" id="QOA-Ou-7e3"/>
                                             <constraint firstItem="8ZO-jH-0Zs" firstAttribute="top" secondItem="rVP-ul-kcI" secondAttribute="bottom" constant="20" id="Qgc-PM-r6x"/>
                                             <constraint firstItem="94R-PN-Xqn" firstAttribute="top" secondItem="6oC-TM-9vh" secondAttribute="top" constant="30" id="SKF-0U-kmT"/>
                                             <constraint firstItem="KHi-2B-emA" firstAttribute="top" secondItem="9Dl-KC-VdX" secondAttribute="bottom" constant="30" id="ThA-CL-Yna"/>
@@ -513,7 +513,7 @@
                                             <constraint firstItem="NlD-LB-D7A" firstAttribute="leading" secondItem="rVP-ul-kcI" secondAttribute="leading" id="kkS-oy-0I2"/>
                                             <constraint firstItem="8ZO-jH-0Zs" firstAttribute="height" secondItem="rVP-ul-kcI" secondAttribute="height" id="lKm-58-ePG"/>
                                             <constraint firstItem="NlD-LB-D7A" firstAttribute="centerY" secondItem="rVP-ul-kcI" secondAttribute="centerY" id="lNn-aH-7QC"/>
-                                            <constraint firstItem="75J-Py-imB" firstAttribute="height" secondItem="8ZO-jH-0Zs" secondAttribute="height" id="lw1-k2-bcJ"/>
+                                            <constraint firstItem="75J-Py-imB" firstAttribute="height" secondItem="8ZO-jH-0Zs" secondAttribute="height" multiplier="0.8" id="lw1-k2-bcJ"/>
                                             <constraint firstItem="434-Xk-DAp" firstAttribute="trailing" secondItem="cpx-hM-2dG" secondAttribute="trailing" id="n2C-rQ-Vzj"/>
                                             <constraint firstItem="6xN-5Z-XPr" firstAttribute="top" secondItem="n7o-zs-uMa" secondAttribute="bottom" constant="30" id="nkS-XN-PPJ"/>
                                             <constraint firstItem="94R-PN-Xqn" firstAttribute="centerX" secondItem="6oC-TM-9vh" secondAttribute="centerX" id="nq6-Mp-HRW"/>
