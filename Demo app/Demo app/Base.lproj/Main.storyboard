@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iI-h0-OyN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="614"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="632"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zId-n1-sXA">
                                                 <rect key="frame" x="40" y="30" width="334" height="89.5"/>
@@ -43,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOv-lX-mBF">
-                                                <rect key="frame" x="40" y="149.5" width="334" height="45"/>
+                                                <rect key="frame" x="40" y="149.5" width="334" height="63"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Basic Auto Layout">
                                                     <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
@@ -55,10 +55,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-wQ-OE8">
-                                                <rect key="frame" x="40" y="224.5" width="334" height="89.5"/>
+                                                <rect key="frame" x="40" y="242.5" width="334" height="89.5"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Advance Auto Layout ">
-                                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                                    <fontDescription key="titleFontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                                     <color key="baseForegroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="baseBackgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
@@ -73,7 +73,7 @@
                                             <constraint firstItem="wqf-wQ-OE8" firstAttribute="height" secondItem="zId-n1-sXA" secondAttribute="height" id="8wf-Vl-EBi"/>
                                             <constraint firstItem="wOv-lX-mBF" firstAttribute="trailing" secondItem="zId-n1-sXA" secondAttribute="trailing" id="FCu-Z7-grz"/>
                                             <constraint firstItem="wqf-wQ-OE8" firstAttribute="trailing" secondItem="zId-n1-sXA" secondAttribute="trailing" id="Hbl-ve-sbD"/>
-                                            <constraint firstItem="wOv-lX-mBF" firstAttribute="height" secondItem="zId-n1-sXA" secondAttribute="height" multiplier="0.5" id="YiY-vn-Zcz"/>
+                                            <constraint firstItem="wOv-lX-mBF" firstAttribute="height" secondItem="zId-n1-sXA" secondAttribute="height" multiplier="0.7" id="YiY-vn-Zcz"/>
                                             <constraint firstAttribute="bottom" secondItem="wqf-wQ-OE8" secondAttribute="bottom" constant="300" id="cCI-c7-Z5F"/>
                                             <constraint firstItem="wOv-lX-mBF" firstAttribute="leading" secondItem="zId-n1-sXA" secondAttribute="leading" id="cHI-nB-X8Q"/>
                                             <constraint firstItem="zId-n1-sXA" firstAttribute="top" secondItem="2iI-h0-OyN" secondAttribute="top" constant="30" id="d9f-I3-2Au"/>
