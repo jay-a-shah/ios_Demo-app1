@@ -9,6 +9,9 @@ import UIKit
 
 class SignUpScreen: UIViewController {
 
+    @IBOutlet weak var btnSignInWithGoogle: UIButton!
+    @IBOutlet weak var btnSignUpWithFacebook: UIButton!
+    @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var textEmail: UITextField!
     @IBOutlet weak var textName: UITextField!
@@ -17,6 +20,12 @@ class SignUpScreen: UIViewController {
         textPassword.delegate = self
         textName.delegate = self
         textEmail.delegate = self
+    }
+    func alert (customMessage: String){
+        let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -34,5 +43,20 @@ extension SignUpScreen: UITextFieldDelegate {
             break
         }
         return true
+    }
+}
+//MARK: - Outlet Action
+extension SignUpScreen {
+    
+    @IBAction func btnSignUp(_ sender: UIButton) {
+        alert(customMessage: "You Tapped to Sign Up ")
+    }
+    
+    @IBAction func btnSignUpWithFacebook(_ sender: Any) {
+        alert(customMessage: "SignUp With Facebook is Done")
+    }
+    
+    @IBAction func btnSignInGoogle(_ sender: Any) {
+        alert(customMessage: "SignIn With Google is Done")
     }
 }

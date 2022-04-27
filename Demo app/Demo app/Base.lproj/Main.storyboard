@@ -381,7 +381,8 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Sign Up with Facebook">
                                                             <attributes>
-                                                                <font key="NSFont" size="21" name="AmericanTypewriter"/>
+                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="23" name="AmericanTypewriter"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -390,7 +391,7 @@
                                                     <color key="baseBackgroundColor" red="0.034811017319999998" green="0.3382183024" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacebookLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-LB-D7A">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookLogo-1" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-LB-D7A">
                                                 <rect key="frame" x="20" y="580" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="NlD-LB-D7A" secondAttribute="height" multiplier="1:1" id="xc3-zx-SaF"/>
@@ -575,10 +576,10 @@
     </scenes>
     <color key="tintColor" systemColor="systemGray2Color"/>
     <resources>
-        <image name="FacebookLogo" width="225" height="225"/>
         <image name="GoogleLogo" width="225" height="225"/>
         <image name="LogoOfEye" width="430" height="391"/>
         <image name="LogoOfLoginScreen" width="225" height="225"/>
+        <image name="facebookLogo-1" width="300" height="300"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
