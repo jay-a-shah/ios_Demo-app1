@@ -17,12 +17,6 @@ class LoginScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    func alert (customMessage: String){
-        let alert = UIAlertController(title: "UIAlertController", message: customMessage, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
 }
 
 //MARK: - Outlet Action

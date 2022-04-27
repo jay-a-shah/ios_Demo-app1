@@ -84,7 +84,10 @@ extension SignUpPage: UITextViewDelegate {
     func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
         switch textView {
         case textViewBio:
-            textViewBio.resiFirstResponder()
-        
+            textViewBio.resignFirstResponder()
+        default :
+            break
     }
+        return true
+}
 }
