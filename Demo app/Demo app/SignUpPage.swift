@@ -81,13 +81,20 @@ extension SignUpPage: UITextFieldDelegate {
     }
 }
 extension SignUpPage: UITextViewDelegate {
-    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
-        switch textView {
-        case textViewBio:
+   
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
             textViewBio.resignFirstResponder()
-        default :
-            break
-    }
+        }
         return true
-}
+    }
+//    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
+//        switch textView {
+//        case textViewBio:
+//            textViewBio.resignFirstResponder()
+//        default :
+//            break
+//    }
+//        return true
+//}
 }
