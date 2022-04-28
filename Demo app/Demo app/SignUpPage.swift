@@ -31,6 +31,7 @@ class SignUpPage: UIViewController {
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTapAround()
         textFieldEmail.delegate = self
         textFieldPassword.delegate = self
         textViewBio.delegate = self
@@ -88,13 +89,4 @@ extension SignUpPage: UITextViewDelegate {
         }
         return true
     }
-//    func textViewShouldEndEditing(_ textView: UITextView) -> Bool {
-//        switch textView {
-//        case textViewBio:
-//            textViewBio.resignFirstResponder()
-//        default :
-//            break
-//    }
-//        return true
-//}
 }

@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     //MARK: - Outlets
+    @IBOutlet weak var viewForStackView: UIView!
     @IBOutlet weak var changeLayout: UISwitch!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var stackView: UIStackView!
@@ -50,17 +51,17 @@ extension HomeViewController {
             stepperControl.isHidden = true
             tableView.isHidden = false
             collectionView.isHidden = true
-            stackView.isHidden = true
+            viewForStackView.isHidden = true
         case Constants.ONE:
             stepperControl.isHidden = false
             tableView.isHidden = true
             collectionView.isHidden = false
-            stackView.isHidden = true
+            viewForStackView.isHidden = true
         case Constants.TWO:
             stepperControl.isHidden = true
             tableView.isHidden = true
             collectionView.isHidden = true
-            stackView.isHidden = false
+            viewForStackView.isHidden = false
         default:
             break
         }
