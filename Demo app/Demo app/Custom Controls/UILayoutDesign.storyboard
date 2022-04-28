@@ -17,7 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B3-fc-KoR" customClass="CustomUiButton" customModule="Demo_app" customModuleProvider="target">
-                                <rect key="frame" x="184" y="437.5" width="46.5" height="31"/>
+                                <rect key="frame" x="164.5" y="410.5" width="85.5" height="85.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5B3-fc-KoR" secondAttribute="height" multiplier="1:1" id="2WD-lU-Uw6"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background"/>
@@ -25,18 +28,15 @@
                                     <color key="baseBackgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Jay"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Shubham"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Jay Shah" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhD-aJ-kc0" customClass="CustomUITextField" customModule="Demo_app" customModuleProvider="target">
-                                <rect key="frame" x="20" y="534" width="374" height="34"/>
+                                <rect key="frame" x="20" y="561.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="home"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
                                         <color key="value" systemColor="systemRedColor"/>
                                     </userDefinedRuntimeAttribute>
@@ -62,10 +62,10 @@
     </scenes>
     <designables>
         <designable name="5B3-fc-KoR">
-            <size key="intrinsicContentSize" width="46.5" height="31"/>
+            <size key="intrinsicContentSize" width="85.5" height="31"/>
         </designable>
         <designable name="qhD-aJ-kc0">
-            <size key="intrinsicContentSize" width="120.5" height="34"/>
+            <size key="intrinsicContentSize" width="110.5" height="34"/>
         </designable>
     </designables>
     <resources>

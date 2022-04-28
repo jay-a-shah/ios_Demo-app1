@@ -31,14 +31,28 @@ class CustomUITextField: UITextField{
              updateLeftView()
          }
      }
-     
+    @IBInspectable var rightImage: UIImage? {
+        didSet {
+            updateRightView()
+        }
+    }
+    @IBInspectable var rightPading: CGFloat = 0
      @IBInspectable var leftPadding: CGFloat = 0
      
      @IBInspectable var color: UIColor = UIColor.lightGray {
          didSet {
              updateLeftView()
+             updateRightView()
          }
      }
+    func updateRightView() {
+        if let rightImage = rightImage {
+            rightViewMode = UITextField.ViewMode.always
+            let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+            imageView.contentMode = .scaleAspectFill
+            imageView.image = rightImage
+        }
+    }
      
      func updateLeftView() {
          if let image = leftImage {
