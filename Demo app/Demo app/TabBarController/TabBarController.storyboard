@@ -35,7 +35,7 @@
                             <constraint firstItem="cT4-nc-Q9e" firstAttribute="bottom" secondItem="ahe-et-3Z3" secondAttribute="bottom" id="Edw-Xq-lPN"/>
                             <constraint firstItem="XWg-Hf-I0P" firstAttribute="top" secondItem="cT4-nc-Q9e" secondAttribute="top" id="RlP-ub-RgL"/>
                             <constraint firstItem="XWg-Hf-I0P" firstAttribute="leading" secondItem="cT4-nc-Q9e" secondAttribute="leading" id="WUL-XN-Tu7"/>
-                            <constraint firstItem="ahe-et-3Z3" firstAttribute="height" relation="lessThanOrEqual" secondItem="RLh-qN-4SE" secondAttribute="height" multiplier="0.15" id="mn1-Am-XnS"/>
+                            <constraint firstItem="ahe-et-3Z3" firstAttribute="height" secondItem="RLh-qN-4SE" secondAttribute="height" multiplier="0.15" id="mn1-Am-XnS"/>
                             <constraint firstItem="cT4-nc-Q9e" firstAttribute="trailing" secondItem="XWg-Hf-I0P" secondAttribute="trailing" id="wpI-rz-Nb5"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -260,7 +260,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="L5m-Er-Hf6"/>
-                                <exclude reference="Aeg-MA-vj0"/>
                             </mask>
                         </variation>
                     </view>
